@@ -1,0 +1,9 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1717689396
+icon.svg::CompressedTexture2D::3643358952119815389::1717175525::1717175535::1::::<><>::
+::res://script/::1717687930
+homepage.gd::GDScript::-1::1717687930::0::1::::<>Node2D<>::
+::res://Seens/::1717689287
+homepage.tscn::PackedScene::4770218421668328144::1717686929::0::1::::<><>::
+icon.tscn::PackedScene::2560271317122921227::1717686929::0::1::::<><>::uid://br54ubvhf2j4x::::res://icon.svg
+minigametest.tscn::PackedScene::4012850415306069273::1717689287::0::1::::<><>::res://script/homepage.gd<>uid://br54ubvhf2j4x::::res://icon.svg
