@@ -1,0 +1,65 @@
+[gd_scene load_steps=9 format=3 uid="uid://p231ma1464qf"]
+
+[ext_resource type="Script" path="res://scenes/ParallaxBackground.gd" id="1_e2klx"]
+[ext_resource type="Texture2D" uid="uid://lc6jus06m0cu" path="res://mock-up/sky1.png" id="1_sk6nk"]
+[ext_resource type="Script" path="res://scenes/NPC.gd" id="2_lgvcl"]
+[ext_resource type="Texture2D" uid="uid://b51udvmnhigow" path="res://mock-up/NPC1.png" id="2_um61k"]
+[ext_resource type="Texture2D" uid="uid://b7fv2uacj0djd" path="res://mock-up/street1.png" id="2_vsfli"]
+[ext_resource type="Script" path="res://scenes/PlayerCamera.gd" id="4_or7gr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cwamg"]
+radius = 14.4005
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pko2m"]
+
+[node name="DayShift" type="Node2D"]
+metadata/_edit_vertical_guides_ = [1127.0]
+
+[node name="PlayerCamera" type="CharacterBody2D" parent="."]
+position = Vector2(0, 6)
+script = ExtResource("4_or7gr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCamera"]
+position = Vector2(-643.194, 165.095)
+shape = SubResource("CircleShape2D_cwamg")
+disabled = true
+
+[node name="Camera2D" type="Camera2D" parent="PlayerCamera"]
+position = Vector2(206, 439)
+
+[node name="NPC" type="CharacterBody2D" parent="."]
+position = Vector2(208, 565)
+script = ExtResource("2_lgvcl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC"]
+position = Vector2(-9, 19)
+shape = SubResource("CircleShape2D_pko2m")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC"]
+scale = Vector2(0.505, 0.505)
+texture = ExtResource("2_um61k")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_limit_begin = Vector2(-1000, 0)
+scroll_limit_end = Vector2(1000, 0)
+script = ExtResource("1_e2klx")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.55, 0.55)
+motion_mirroring = Vector2(1127, 0)
+
+[node name="sky" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(563, 307.5)
+scale = Vector2(0.878505, 1.04167)
+texture = ExtResource("1_sk6nk")
+metadata/_edit_lock_ = true
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1127, 0)
+
+[node name="street" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(562.841, 307)
+scale = Vector2(0.880311, 1.86494)
+texture = ExtResource("2_vsfli")
+metadata/_edit_lock_ = true

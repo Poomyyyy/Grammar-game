@@ -11,12 +11,13 @@ config_version=5
 [application]
 
 config/name="learingniproject"
-run/main_scene="res://Seens/icon.tscn"
+run/main_scene="res://scenes/MainMenu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
-config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_width=413
+window/size/viewport_height=895
 window/main_scene="res://Seens/icon.tscn"
 
 [rendering]

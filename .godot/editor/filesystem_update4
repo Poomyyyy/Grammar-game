@@ -1,2 +1,5 @@
-res://Seens/homepage.tscn
-res://Seens/icon.tscn
+res://scenes/MainMenu.tscn
+res://scenes/DayShift.tscn
+res://scenes/ParallaxBackground.gd
+res://scenes/PlayerCamera.gd
+res://scenes/NPC.gd
