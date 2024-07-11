@@ -1,19 +1,27 @@
-[gd_scene load_steps=9 format=3 uid="uid://p231ma1464qf"]
+[gd_scene load_steps=13 format=3 uid="uid://p231ma1464qf"]
 
-[ext_resource type="Script" path="res://scenes/ParallaxBackground.gd" id="1_e2klx"]
 [ext_resource type="Texture2D" uid="uid://lc6jus06m0cu" path="res://mock-up/sky1.png" id="1_sk6nk"]
-[ext_resource type="Script" path="res://scenes/NPC.gd" id="2_lgvcl"]
 [ext_resource type="Texture2D" uid="uid://b51udvmnhigow" path="res://mock-up/NPC1.png" id="2_um61k"]
 [ext_resource type="Texture2D" uid="uid://b7fv2uacj0djd" path="res://mock-up/street1.png" id="2_vsfli"]
 [ext_resource type="Script" path="res://scenes/PlayerCamera.gd" id="4_or7gr"]
+[ext_resource type="Script" path="res://scenes/DialogueController.gd" id="6_wbb4c"]
+[ext_resource type="PackedScene" uid="uid://b8mnx6cgqss1j" path="res://ui/investigation.tscn" id="7_mqdxw"]
+[ext_resource type="PackedScene" uid="uid://y7ke2edfixad" path="res://ui/appealing_panel.tscn" id="8_26xd4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cwamg"]
 radius = 14.4005
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pko2m"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kdoax"]
+bg_color = Color(0.244776, 0.244776, 0.244776, 1)
+
+[sub_resource type="Gradient" id="Gradient_8qa7c"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_avvyh"]
+gradient = SubResource("Gradient_8qa7c")
+
 [node name="DayShift" type="Node2D"]
-metadata/_edit_vertical_guides_ = [1127.0]
 
 [node name="PlayerCamera" type="CharacterBody2D" parent="."]
 position = Vector2(0, 6)
@@ -29,7 +37,6 @@ position = Vector2(206, 439)
 
 [node name="NPC" type="CharacterBody2D" parent="."]
 position = Vector2(208, 565)
-script = ExtResource("2_lgvcl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC"]
 position = Vector2(-9, 19)
@@ -41,9 +48,9 @@ scale = Vector2(0.505, 0.505)
 texture = ExtResource("2_um61k")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+visible = false
 scroll_limit_begin = Vector2(-1000, 0)
 scroll_limit_end = Vector2(1000, 0)
-script = ExtResource("1_e2klx")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2(0.55, 0.55)
@@ -63,3 +70,43 @@ position = Vector2(562.841, 307)
 scale = Vector2(0.880311, 1.86494)
 texture = ExtResource("2_vsfli")
 metadata/_edit_lock_ = true
+
+[node name="DialogueController" type="CanvasLayer" parent="."]
+script = ExtResource("6_wbb4c")
+
+[node name="InvestigationPanel" parent="DialogueController" instance=ExtResource("7_mqdxw")]
+offset_top = -337.0
+offset_bottom = -66.0
+auto_translate = false
+
+[node name="AppealingPanel" parent="DialogueController" instance=ExtResource("8_26xd4")]
+visible = false
+offset_top = -447.0
+
+[node name="ButtomMargin" type="Panel" parent="DialogueController"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -72.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_styles/panel = SubResource("StyleBoxFlat_kdoax")
+
+[node name="test1" type="Button" parent="DialogueController/ButtomMargin"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -18.5
+offset_right = 97.0
+offset_bottom = 18.5
+grow_vertical = 2
+text = "test 1"
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+texture = SubResource("GradientTexture2D_avvyh")
+
+[connection signal="button_down" from="DialogueController/ButtomMargin/test1" to="DialogueController" method="_on_test_1_button_down"]

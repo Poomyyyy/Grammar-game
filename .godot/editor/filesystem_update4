@@ -1,5 +1,5 @@
-res://conversation/paco.json
-res://ui/appealing_panel.tscn
-res://scenes/MainMenu.tscn
 res://scenes/DayShift.tscn
-res://ui/investigation_panel.tscn
+res://scenes/MainMenu.tscn
+res://ui/appealing_panel.tscn
+res://ui/investigation.tscn
+res://scenes/DialogueController.gd
