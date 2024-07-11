@@ -1,1010 +1,1010 @@
 {
   "conversation": [
-    [
-      {
-        "id": 1,
-        "sequence": 1,
-        "raw_sentence": "What was you doing at 3 am last night?",
-        "err_i": 1,
-        "correct": "were",
-        "err_code": "paco",
-        "sentence": [
-          "What",
-          "was",
-          "you",
-          "doing",
-          "at",
-          "3",
-          "am",
-          "last",
-          "night?"
-        ]
-      },
-      {
-        "id": 1,
-        "sequence": 2,
-        "raw_sentence": "I was played video games, why?",
-        "err_i": 2,
-        "correct": "playing",
-        "err_code": "paco",
-        "sentence": [
-          "I",
-          "was",
-          "played",
-          "video",
-          "games,",
-          "why?"
-        ]
-      },
-      {
-        "id": 1,
-        "sequence": 3,
-        "raw_sentence": "Were you any good?",
-        "err_i": -1,
-        "correct": "-",
-        "err_code": "paco",
-        "sentence": [
-          "Were",
-          "you",
-          "any",
-          "good?"
-        ]
-      },
-      {
-        "id": 1,
-        "sequence": 4,
-        "raw_sentence": "Yeah, I was pretty good! I beaten my high score.",
-        "err_i": 6,
-        "correct": "beat",
-        "err_code": "paco",
-        "sentence": [
-          "Yeah,",
-          "I",
-          "was",
-          "pretty",
-          "good!",
-          "I",
-          "beaten",
-          "my",
-          "high",
-          "score."
-        ]
-      }
-    ],
-    [
-      {
-        "id": 2,
-        "sequence": 1,
-        "raw_sentence": "Were you watch the new Marvel movie over the weekend?",
-        "err_i": 2,
-        "correct": "watching",
-        "err_code": "paco",
-        "sentence": [
-          "Were",
-          "you",
-          "watch",
-          "the",
-          "new",
-          "Marvel",
-          "movie",
-          "over",
-          "the",
-          "weekend?"
-        ]
-      },
-      {
-        "id": 2,
-        "sequence": 2,
-        "raw_sentence": "Yeah, I were, and I loved it!",
-        "err_i": 2,
-        "correct": "was",
-        "err_code": "paco",
-        "sentence": [
-          "Yeah,",
-          "I",
-          "were,",
-          "and",
-          "I",
-          "loved",
-          "it!"
-        ]
-      }
-    ],
-    [
-      {
-        "id": 3,
-        "sequence": 1,
-        "raw_sentence": "What were you eaten for lunch yesterday?",
-        "err_i": 3,
-        "correct": "eating",
-        "err_code": "paco",
-        "sentence": [
-          "What",
-          "were",
-          "you",
-          "eaten",
-          "for",
-          "lunch",
-          "yesterday?"
-        ]
-      },
-      {
-        "id": 3,
-        "sequence": 2,
-        "raw_sentence": "I was had a sandwich, what about you?",
-        "err_i": 2,
-        "correct": "having",
-        "err_code": "paco",
-        "sentence": [
-          "I",
-          "was",
-          "had",
-          "a",
-          "sandwich,",
-          "what",
-          "about",
-          "you?"
-        ]
-      },
-      {
-        "id": 3,
-        "sequence": 3,
-        "raw_sentence": "I was tries a new salad place.",
-        "err_i": 2,
-        "correct": "trying",
-        "err_code": "paco",
-        "sentence": [
-          "I",
-          "was",
-          "tries",
-          "a",
-          "new",
-          "salad",
-          "place."
-        ]
-      }
-    ],
-    [
-      {
-        "id": 4,
-        "sequence": 1,
-        "raw_sentence": "Was you at the concert last night?",
-        "err_i": 0,
-        "correct": "Were",
-        "err_code": "paco",
-        "sentence": [
-          "Was",
-          "you",
-          "at",
-          "the",
-          "concert",
-          "last",
-          "night?"
-        ]
-      },
-      {
-        "id": 4,
-        "sequence": 2,
-        "raw_sentence": "Yeah, I was in the front row! I knowing most of the lyrics! The lead singer is amazing live.",
-        "err_i": 8,
-        "correct": "knew",
-        "err_code": "paco",
-        "sentence": [
-          "Yeah,",
-          "I",
-          "was",
-          "in",
-          "the",
-          "front",
-          "row!",
-          "I",
-          "knowing",
-          "most",
-          "of",
-          "the",
-          "lyrics!",
-          "The",
-          "lead",
-          "singer",
-          "is",
-          "amazing",
-          "live."
-        ]
-      }
-    ],
-    [
-      {
-        "id": 5,
-        "sequence": 1,
-        "raw_sentence": "What were you done when the earthquake struck?",
-        "err_i": 3,
-        "correct": "doing",
-        "err_code": "paco",
-        "sentence": [
-          "What",
-          "were",
-          "you",
-          "done",
-          "when",
-          "the",
-          "earthquake",
-          "struck?"
-        ]
-      },
-      {
-        "id": 5,
-        "sequence": 2,
-        "raw_sentence": "I was on my way to work, it was crazy!",
-        "err_i": -1,
-        "correct": "-",
-        "err_code": "paco",
-        "sentence": [
-          "I",
-          "was",
-          "on",
-          "my",
-          "way",
-          "to",
-          "work,",
-          "it",
-          "was",
-          "crazy!"
-        ]
-      },
-      {
-        "id": 5,
-        "sequence": 3,
-        "raw_sentence": "Were you scared?",
-        "err_i": -1,
-        "correct": "-",
-        "err_code": "paco",
-        "sentence": [
-          "Were",
-          "you",
-          "scared?"
-        ]
-      },
-      {
-        "id": 5,
-        "sequence": 4,
-        "raw_sentence": "Yeah, a little. The train stopping suddenly and we had to get out quickly.",
-        "err_i": 5,
-        "correct": "stopped",
-        "err_code": "paco",
-        "sentence": [
-          "Yeah,",
-          "a",
-          "little.",
-          "The",
-          "train",
-          "stopping",
-          "suddenly",
-          "and",
-          "we",
-          "had",
-          "to",
-          "get",
-          "out",
-          "quickly."
-        ]
-      }
-    ],
-    [
-      {
-        "id": 6,
-        "sequence": 1,
-        "raw_sentence": "Were you studied for your exam last night?",
-        "err_i": 2,
-        "correct": "studying",
-        "err_code": "paco",
-        "sentence": [
-          "Were",
-          "you",
-          "studied",
-          "for",
-          "your",
-          "exam",
-          "last",
-          "night?"
-        ]
-      },
-      {
-        "id": 6,
-        "sequence": 2,
-        "raw_sentence": "Yeah, I do up until 2 am, but I didn't feel prepared",
-        "err_i": 2,
-        "correct": "was",
-        "err_code": "paco",
-        "sentence": [
-          "Yeah,",
-          "I",
-          "do",
-          "up",
-          "until",
-          "2",
-          "am,",
-          "but",
-          "I",
-          "didn't",
-          "feel",
-          "prepared"
-        ]
-      },
-      {
-        "id": 6,
-        "sequence": 3,
-        "raw_sentence": "Do you think it went well?",
-        "err_i": -1,
-        "correct": "-",
-        "err_code": "paco",
-        "sentence": [
-          "Do",
-          "you",
-          "think",
-          "it",
-          "went",
-          "well?"
-        ]
-      },
-      {
-        "id": 6,
-        "sequence": 4,
-        "raw_sentence": "Honestly, I'm not sure. I'm waiting for the results.",
-        "err_i": -1,
-        "correct": "-",
-        "err_code": "paco",
-        "sentence": [
-          "Honestly,",
-          "I'm",
-          "not",
-          "sure.",
-          "I'm",
-          "waiting",
-          "for",
-          "the",
-          "results."
-        ]
-      }
-    ],
-    [
-      {
-        "id": 7,
-        "sequence": 1,
-        "raw_sentence": "Were your grandpa traveling abroad last summer?",
-        "err_i": 0,
-        "correct": "Was",
-        "err_code": "paco",
-        "sentence": [
-          "Were",
-          "your",
-          "grandpa",
-          "traveling",
-          "abroad",
-          "last",
-          "summer?"
-        ]
-      },
-      {
-        "id": 7,
-        "sequence": 2,
-        "raw_sentence": "Yes, He is in Europe for three weeks! He loves Italy the most!",
-        "err_i": 2,
-        "correct": "was",
-        "err_code": "paco",
-        "sentence": [
-          "Yes,",
-          "He",
-          "is",
-          "in",
-          "Europe",
-          "for",
-          "three",
-          "weeks!",
-          "He",
-          "loves",
-          "Italy",
-          "the",
-          "most!"
-        ]
-      }
-    ],
-    [
-      {
-        "id": 8,
-        "sequence": 1,
-        "raw_sentence": "What were you does when your favorite team won the game?",
-        "err_i": 3,
-        "correct": "doing",
-        "err_code": "paco",
-        "sentence": [
-          "What",
-          "were",
-          "you",
-          "does",
-          "when",
-          "your",
-          "favorite",
-          "team",
-          "won",
-          "the",
-          "game?"
-        ]
-      },
-      {
-        "id": 8,
-        "sequence": 2,
-        "raw_sentence": "I did watching it at the sports bar with friends!",
-        "err_i": 1,
-        "correct": "was",
-        "err_code": "paco",
-        "sentence": [
-          "I",
-          "did",
-          "watching",
-          "it",
-          "at",
-          "the",
-          "sports",
-          "bar",
-          "with",
-          "friends!"
-        ]
-      },
-      {
-        "id": 8,
-        "sequence": 3,
-        "raw_sentence": "Were you screamed with excitement?",
-        "err_i": 2,
-        "correct": "screaming",
-        "err_code": "paco",
-        "sentence": [
-          "Were",
-          "you",
-          "screamed",
-          "with",
-          "excitement?"
-        ]
-      },
-      {
-        "id": 8,
-        "sequence": 4,
-        "raw_sentence": "You could hear me from a mile away!",
-        "err_i": -1,
-        "correct": "-",
-        "err_code": "paco",
-        "sentence": [
-          "You",
-          "could",
-          "hear",
-          "me",
-          "from",
-          "a",
-          "mile",
-          "away!"
-        ]
-      }
-    ],
-    [
-      {
-        "id": 9,
-        "sequence": 1,
-        "raw_sentence": "Were you work on a project last weekend?",
-        "err_i": 2,
-        "correct": "working",
-        "err_code": "paco",
-        "sentence": [
-          "Were",
-          "you",
-          "work",
-          "on",
-          "a",
-          "project",
-          "last",
-          "weekend?"
-        ]
-      },
-      {
-        "id": 9,
-        "sequence": 2,
-        "raw_sentence": "Yeah, I was trying to meet the deadline",
-        "err_i": -1,
-        "correct": "-",
-        "err_code": "paco",
-        "sentence": [
-          "Yeah,",
-          "I",
-          "was",
-          "trying",
-          "to",
-          "meet",
-          "the",
-          "deadline"
-        ]
-      },
-      {
-        "id": 9,
-        "sequence": 3,
-        "raw_sentence": "Did you finishing it on time?",
-        "err_i": 2,
-        "correct": "finishing",
-        "err_code": "paco",
-        "sentence": [
-          "Did",
-          "you",
-          "finishing",
-          "it",
-          "on",
-          "time?"
-        ]
-      },
-      {
-        "id": 9,
-        "sequence": 4,
-        "raw_sentence": "Barely. I stayed up until 1 am to get it done.",
-        "err_i": -1,
-        "correct": "-",
-        "err_code": "paco",
-        "sentence": [
-          "Barely.",
-          "I",
-          "stayed",
-          "up",
-          "until",
-          "1",
-          "am",
-          "to",
-          "get",
-          "it",
-          "done."
-        ]
-      }
-    ],
-    [
-      {
-        "id": 10,
-        "sequence": 1,
-        "raw_sentence": "I heard that John did watching a movie at the cinema last night.",
-        "err_i": 4,
-        "correct": "was",
-        "err_code": "paco",
-        "sentence": [
-          "I",
-          "heard",
-          "that",
-          "John",
-          "did",
-          "watching",
-          "a",
-          "movie",
-          "at",
-          "the",
-          "cinema",
-          "last",
-          "night."
-        ]
-      },
-      {
-        "id": 10,
-        "sequence": 2,
-        "raw_sentence": "Really? I thought he was played soccer with his friends instead.",
-        "err_i": 5,
-        "correct": "playing",
-        "err_code": "paco",
-        "sentence": [
-          "Really?",
-          "I",
-          "thought",
-          "he",
-          "was",
-          "played",
-          "soccer",
-          "with",
-          "his",
-          "friends",
-          "instead."
-        ]
-      },
-      {
-        "id": 10,
-        "sequence": 3,
-        "raw_sentence": "No, I'm sure it was a movie. My sister were sitting next to him and she told me all about it.",
-        "err_i": 9,
-        "correct": "was",
-        "err_code": "paco",
-        "sentence": [
-          "No,",
-          "I'm",
-          "sure",
-          "it",
-          "was",
-          "a",
-          "movie.",
-          "My",
-          "sister",
-          "were",
-          "sitting",
-          "next",
-          "to",
-          "him",
-          "and",
-          "she",
-          "told",
-          "me",
-          "all",
-          "about",
-          "it."
-        ]
-      }
-    ],
-    [
-      {
-        "id": 11,
-        "sequence": 1,
-        "raw_sentence": "What were you did when your phone battery died?",
-        "err_i": 3,
-        "correct": "doing",
-        "err_code": "paco",
-        "sentence": [
-          "What",
-          "were",
-          "you",
-          "did",
-          "when",
-          "your",
-          "phone",
-          "battery",
-          "died?"
-        ]
-      },
-      {
-        "id": 11,
-        "sequence": 2,
-        "raw_sentence": "I were texting my friend, and then it just went dead",
-        "err_i": 1,
-        "correct": "was",
-        "err_code": "paco",
-        "sentence": [
-          "I",
-          "were",
-          "texting",
-          "my",
-          "friend,",
-          "and",
-          "then",
-          "it",
-          "just",
-          "went",
-          "dead"
-        ]
-      },
-      {
-        "id": 11,
-        "sequence": 3,
-        "raw_sentence": "Were you worry about missing the group chat?",
-        "err_i": 2,
-        "correct": "worried",
-        "err_code": "paco",
-        "sentence": [
-          "Were",
-          "you",
-          "worry",
-          "about",
-          "missing",
-          "the",
-          "group",
-          "chat?"
-        ]
-      },
-      {
-        "id": 11,
-        "sequence": 4,
-        "raw_sentence": "Yeah, a bit. We were plans a party and I didn't want to miss out.",
-        "err_i": 5,
-        "correct": "planning",
-        "err_code": "paco",
-        "sentence": [
-          "Yeah,",
-          "a",
-          "bit.",
-          "We",
-          "were",
-          "plans",
-          "a",
-          "party",
-          "and",
-          "I",
-          "didn't",
-          "want",
-          "to",
-          "miss",
-          "out."
-        ]
-      }
-    ],
-    [
-      {
-        "id": 12,
-        "sequence": 1,
-        "raw_sentence": "Do you feeling unwell last week?",
-        "err_i": 0,
-        "correct": "Were",
-        "err_code": "paco",
-        "sentence": [
-          "Do",
-          "you",
-          "feeling",
-          "unwell",
-          "last",
-          "week?"
-        ]
-      },
-      {
-        "id": 12,
-        "sequence": 2,
-        "raw_sentence": "Yeah, I was came down with a cold",
-        "err_i": 3,
-        "correct": "coming",
-        "err_code": "paco",
-        "sentence": [
-          "Yeah,",
-          "I",
-          "was",
-          "came",
-          "down",
-          "with",
-          "a",
-          "cold"
-        ]
-      },
-      {
-        "id": 12,
-        "sequence": 3,
-        "raw_sentence": "Did you take any medicine?",
-        "err_i": -1,
-        "correct": "-",
-        "err_code": "paco",
-        "sentence": [
-          "Did",
-          "you",
-          "take",
-          "any",
-          "medicine?"
-        ]
-      },
-      {
-        "id": 12,
-        "sequence": 4,
-        "raw_sentence": "Yeah, my mom gave me some antibiotics. It's almost gone now.",
-        "err_i": -1,
-        "correct": "-",
-        "err_code": "paco",
-        "sentence": [
-          "Yeah,",
-          "my",
-          "mom",
-          "gave",
-          "me",
-          "some",
-          "antibiotics.",
-          "It's",
-          "almost",
-          "gone",
-          "now."
-        ]
-      }
-    ],
-    [
-      {
-        "id": 13,
-        "sequence": 1,
-        "raw_sentence": "Did you practicing yoga yesterday morning?",
-        "err_i": 0,
-        "correct": "Were",
-        "err_code": "paco",
-        "sentence": [
-          "Did",
-          "you",
-          "practicing",
-          "yoga",
-          "yesterday",
-          "morning?"
-        ]
-      },
-      {
-        "id": 13,
-        "sequence": 2,
-        "raw_sentence": "Yes, I was tried to get in shape for the summer",
-        "err_i": 3,
-        "correct": "trying",
-        "err_code": "paco",
-        "sentence": [
-          "Yes,",
-          "I",
-          "was",
-          "tried",
-          "to",
-          "get",
-          "in",
-          "shape",
-          "for",
-          "the",
-          "summer"
-        ]
-      },
-      {
-        "id": 13,
-        "sequence": 3,
-        "raw_sentence": "How's that going for you?",
-        "err_i": -1,
-        "correct": "-",
-        "err_code": "paco",
-        "sentence": [
-          "How's",
-          "that",
-          "going",
-          "for",
-          "you?"
-        ]
-      },
-      {
-        "id": 13,
-        "sequence": 4,
-        "raw_sentence": "It's going well so far. I've noticed an improvement in my flexibility already.",
-        "err_i": -1,
-        "correct": "-",
-        "err_code": "paco",
-        "sentence": [
-          "It's",
-          "going",
-          "well",
-          "so",
-          "far.",
-          "I've",
-          "noticed",
-          "an",
-          "improvement",
-          "in",
-          "my",
-          "flexibility",
-          "already."
-        ]
-      }
-    ],
-    [
-      {
-        "id": 14,
-        "sequence": 1,
-        "raw_sentence": "Was you at the amusement park last Saturday?",
-        "err_i": 0,
-        "correct": "Were",
-        "err_code": "paco",
-        "sentence": [
-          "Was",
-          "you",
-          "at",
-          "the",
-          "amusement",
-          "park",
-          "last",
-          "Saturday?"
-        ]
-      },
-      {
-        "id": 14,
-        "sequence": 2,
-        "raw_sentence": "Yeah, I was on that rollercoaster for hours!",
-        "err_i": -1,
-        "correct": "-",
-        "err_code": "paco",
-        "sentence": [
-          "Yeah,",
-          "I",
-          "was",
-          "on",
-          "that",
-          "rollercoaster",
-          "for",
-          "hours!"
-        ]
-      },
-      {
-        "id": 14,
-        "sequence": 3,
-        "raw_sentence": "Were you scream the whole time?",
-        "err_i": 2,
-        "correct": "screaming",
-        "err_code": "paco",
-        "sentence": [
-          "Were",
-          "you",
-          "scream",
-          "the",
-          "whole",
-          "time?"
-        ]
-      },
-      {
-        "id": 14,
-        "sequence": 4,
-        "raw_sentence": "Ha! You could hear me all over the park. It was so much fun!",
-        "err_i": -1,
-        "correct": "-",
-        "err_code": "paco",
-        "sentence": [
-          "Ha!",
-          "You",
-          "could",
-          "hear",
-          "me",
-          "all",
-          "over",
-          "the",
-          "park.",
-          "It",
-          "was",
-          "so",
-          "much",
-          "fun!"
-        ]
-      }
-    ],
-    [
-      {
-        "id": 15,
-        "sequence": 1,
-        "raw_sentence": "What were you did when your favorite TV show ended its season?",
-        "err_i": 3,
-        "correct": "doing",
-        "err_code": "paco",
-        "sentence": [
-          "What",
-          "were",
-          "you",
-          "did",
-          "when",
-          "your",
-          "favorite",
-          "TV",
-          "show",
-          "ended",
-          "its",
-          "season?"
-        ]
-      },
-      {
-        "id": 15,
-        "sequence": 2,
-        "raw_sentence": "I were watching it live with my family!",
-        "err_i": 1,
-        "correct": "was",
-        "err_code": "paco",
-        "sentence": [
-          "I",
-          "were",
-          "watching",
-          "it",
-          "live",
-          "with",
-          "my",
-          "family!"
-        ]
-      },
-      {
-        "id": 15,
-        "sequence": 3,
-        "raw_sentence": "Were you sad it was over?",
-        "err_i": -1,
-        "correct": "-",
-        "err_code": "paco",
-        "sentence": [
-          "Were",
-          "you",
-          "sad",
-          "it",
-          "was",
-          "over?"
-        ]
-      }
-    ]
+	[
+	  {
+		"id": 1,
+		"sequence": 1,
+		"raw_sentence": "What was you doing at 3 am last night?",
+		"err_i": 1,
+		"correct": "were",
+		"err_code": "paco",
+		"sentence": [
+		  "What",
+		  "was",
+		  "you",
+		  "doing",
+		  "at",
+		  "3",
+		  "am",
+		  "last",
+		  "night?"
+		]
+	  },
+	  {
+		"id": 1,
+		"sequence": 2,
+		"raw_sentence": "I was played video games, why?",
+		"err_i": 2,
+		"correct": "playing",
+		"err_code": "paco",
+		"sentence": [
+		  "I",
+		  "was",
+		  "played",
+		  "video",
+		  "games,",
+		  "why?"
+		]
+	  },
+	  {
+		"id": 1,
+		"sequence": 3,
+		"raw_sentence": "Were you any good?",
+		"err_i": -1,
+		"correct": "-",
+		"err_code": "paco",
+		"sentence": [
+		  "Were",
+		  "you",
+		  "any",
+		  "good?"
+		]
+	  },
+	  {
+		"id": 1,
+		"sequence": 4,
+		"raw_sentence": "Yeah, I was pretty good! I beaten my high score.",
+		"err_i": 6,
+		"correct": "beat",
+		"err_code": "paco",
+		"sentence": [
+		  "Yeah,",
+		  "I",
+		  "was",
+		  "pretty",
+		  "good!",
+		  "I",
+		  "beaten",
+		  "my",
+		  "high",
+		  "score."
+		]
+	  }
+	],
+	[
+	  {
+		"id": 2,
+		"sequence": 1,
+		"raw_sentence": "Were you watch the new Marvel movie over the weekend?",
+		"err_i": 2,
+		"correct": "watching",
+		"err_code": "paco",
+		"sentence": [
+		  "Were",
+		  "you",
+		  "watch",
+		  "the",
+		  "new",
+		  "Marvel",
+		  "movie",
+		  "over",
+		  "the",
+		  "weekend?"
+		]
+	  },
+	  {
+		"id": 2,
+		"sequence": 2,
+		"raw_sentence": "Yeah, I were, and I loved it!",
+		"err_i": 2,
+		"correct": "was",
+		"err_code": "paco",
+		"sentence": [
+		  "Yeah,",
+		  "I",
+		  "were,",
+		  "and",
+		  "I",
+		  "loved",
+		  "it!"
+		]
+	  }
+	],
+	[
+	  {
+		"id": 3,
+		"sequence": 1,
+		"raw_sentence": "What were you eaten for lunch yesterday?",
+		"err_i": 3,
+		"correct": "eating",
+		"err_code": "paco",
+		"sentence": [
+		  "What",
+		  "were",
+		  "you",
+		  "eaten",
+		  "for",
+		  "lunch",
+		  "yesterday?"
+		]
+	  },
+	  {
+		"id": 3,
+		"sequence": 2,
+		"raw_sentence": "I was had a sandwich, what about you?",
+		"err_i": 2,
+		"correct": "having",
+		"err_code": "paco",
+		"sentence": [
+		  "I",
+		  "was",
+		  "had",
+		  "a",
+		  "sandwich,",
+		  "what",
+		  "about",
+		  "you?"
+		]
+	  },
+	  {
+		"id": 3,
+		"sequence": 3,
+		"raw_sentence": "I was tries a new salad place.",
+		"err_i": 2,
+		"correct": "trying",
+		"err_code": "paco",
+		"sentence": [
+		  "I",
+		  "was",
+		  "tries",
+		  "a",
+		  "new",
+		  "salad",
+		  "place."
+		]
+	  }
+	],
+	[
+	  {
+		"id": 4,
+		"sequence": 1,
+		"raw_sentence": "Was you at the concert last night?",
+		"err_i": 0,
+		"correct": "Were",
+		"err_code": "paco",
+		"sentence": [
+		  "Was",
+		  "you",
+		  "at",
+		  "the",
+		  "concert",
+		  "last",
+		  "night?"
+		]
+	  },
+	  {
+		"id": 4,
+		"sequence": 2,
+		"raw_sentence": "Yeah, I was in the front row! I knowing most of the lyrics! The lead singer is amazing live.",
+		"err_i": 8,
+		"correct": "knew",
+		"err_code": "paco",
+		"sentence": [
+		  "Yeah,",
+		  "I",
+		  "was",
+		  "in",
+		  "the",
+		  "front",
+		  "row!",
+		  "I",
+		  "knowing",
+		  "most",
+		  "of",
+		  "the",
+		  "lyrics!",
+		  "The",
+		  "lead",
+		  "singer",
+		  "is",
+		  "amazing",
+		  "live."
+		]
+	  }
+	],
+	[
+	  {
+		"id": 5,
+		"sequence": 1,
+		"raw_sentence": "What were you done when the earthquake struck?",
+		"err_i": 3,
+		"correct": "doing",
+		"err_code": "paco",
+		"sentence": [
+		  "What",
+		  "were",
+		  "you",
+		  "done",
+		  "when",
+		  "the",
+		  "earthquake",
+		  "struck?"
+		]
+	  },
+	  {
+		"id": 5,
+		"sequence": 2,
+		"raw_sentence": "I was on my way to work, it was crazy!",
+		"err_i": -1,
+		"correct": "-",
+		"err_code": "paco",
+		"sentence": [
+		  "I",
+		  "was",
+		  "on",
+		  "my",
+		  "way",
+		  "to",
+		  "work,",
+		  "it",
+		  "was",
+		  "crazy!"
+		]
+	  },
+	  {
+		"id": 5,
+		"sequence": 3,
+		"raw_sentence": "Were you scared?",
+		"err_i": -1,
+		"correct": "-",
+		"err_code": "paco",
+		"sentence": [
+		  "Were",
+		  "you",
+		  "scared?"
+		]
+	  },
+	  {
+		"id": 5,
+		"sequence": 4,
+		"raw_sentence": "Yeah, a little. The train stopping suddenly and we had to get out quickly.",
+		"err_i": 5,
+		"correct": "stopped",
+		"err_code": "paco",
+		"sentence": [
+		  "Yeah,",
+		  "a",
+		  "little.",
+		  "The",
+		  "train",
+		  "stopping",
+		  "suddenly",
+		  "and",
+		  "we",
+		  "had",
+		  "to",
+		  "get",
+		  "out",
+		  "quickly."
+		]
+	  }
+	],
+	[
+	  {
+		"id": 6,
+		"sequence": 1,
+		"raw_sentence": "Were you studied for your exam last night?",
+		"err_i": 2,
+		"correct": "studying",
+		"err_code": "paco",
+		"sentence": [
+		  "Were",
+		  "you",
+		  "studied",
+		  "for",
+		  "your",
+		  "exam",
+		  "last",
+		  "night?"
+		]
+	  },
+	  {
+		"id": 6,
+		"sequence": 2,
+		"raw_sentence": "Yeah, I do up until 2 am, but I didn't feel prepared",
+		"err_i": 2,
+		"correct": "was",
+		"err_code": "paco",
+		"sentence": [
+		  "Yeah,",
+		  "I",
+		  "do",
+		  "up",
+		  "until",
+		  "2",
+		  "am,",
+		  "but",
+		  "I",
+		  "didn't",
+		  "feel",
+		  "prepared"
+		]
+	  },
+	  {
+		"id": 6,
+		"sequence": 3,
+		"raw_sentence": "Do you think it went well?",
+		"err_i": -1,
+		"correct": "-",
+		"err_code": "paco",
+		"sentence": [
+		  "Do",
+		  "you",
+		  "think",
+		  "it",
+		  "went",
+		  "well?"
+		]
+	  },
+	  {
+		"id": 6,
+		"sequence": 4,
+		"raw_sentence": "Honestly, I'm not sure. I'm waiting for the results.",
+		"err_i": -1,
+		"correct": "-",
+		"err_code": "paco",
+		"sentence": [
+		  "Honestly,",
+		  "I'm",
+		  "not",
+		  "sure.",
+		  "I'm",
+		  "waiting",
+		  "for",
+		  "the",
+		  "results."
+		]
+	  }
+	],
+	[
+	  {
+		"id": 7,
+		"sequence": 1,
+		"raw_sentence": "Were your grandpa traveling abroad last summer?",
+		"err_i": 0,
+		"correct": "Was",
+		"err_code": "paco",
+		"sentence": [
+		  "Were",
+		  "your",
+		  "grandpa",
+		  "traveling",
+		  "abroad",
+		  "last",
+		  "summer?"
+		]
+	  },
+	  {
+		"id": 7,
+		"sequence": 2,
+		"raw_sentence": "Yes, He is in Europe for three weeks! He loves Italy the most!",
+		"err_i": 2,
+		"correct": "was",
+		"err_code": "paco",
+		"sentence": [
+		  "Yes,",
+		  "He",
+		  "is",
+		  "in",
+		  "Europe",
+		  "for",
+		  "three",
+		  "weeks!",
+		  "He",
+		  "loves",
+		  "Italy",
+		  "the",
+		  "most!"
+		]
+	  }
+	],
+	[
+	  {
+		"id": 8,
+		"sequence": 1,
+		"raw_sentence": "What were you does when your favorite team won the game?",
+		"err_i": 3,
+		"correct": "doing",
+		"err_code": "paco",
+		"sentence": [
+		  "What",
+		  "were",
+		  "you",
+		  "does",
+		  "when",
+		  "your",
+		  "favorite",
+		  "team",
+		  "won",
+		  "the",
+		  "game?"
+		]
+	  },
+	  {
+		"id": 8,
+		"sequence": 2,
+		"raw_sentence": "I did watching it at the sports bar with friends!",
+		"err_i": 1,
+		"correct": "was",
+		"err_code": "paco",
+		"sentence": [
+		  "I",
+		  "did",
+		  "watching",
+		  "it",
+		  "at",
+		  "the",
+		  "sports",
+		  "bar",
+		  "with",
+		  "friends!"
+		]
+	  },
+	  {
+		"id": 8,
+		"sequence": 3,
+		"raw_sentence": "Were you screamed with excitement?",
+		"err_i": 2,
+		"correct": "screaming",
+		"err_code": "paco",
+		"sentence": [
+		  "Were",
+		  "you",
+		  "screamed",
+		  "with",
+		  "excitement?"
+		]
+	  },
+	  {
+		"id": 8,
+		"sequence": 4,
+		"raw_sentence": "You could hear me from a mile away!",
+		"err_i": -1,
+		"correct": "-",
+		"err_code": "paco",
+		"sentence": [
+		  "You",
+		  "could",
+		  "hear",
+		  "me",
+		  "from",
+		  "a",
+		  "mile",
+		  "away!"
+		]
+	  }
+	],
+	[
+	  {
+		"id": 9,
+		"sequence": 1,
+		"raw_sentence": "Were you work on a project last weekend?",
+		"err_i": 2,
+		"correct": "working",
+		"err_code": "paco",
+		"sentence": [
+		  "Were",
+		  "you",
+		  "work",
+		  "on",
+		  "a",
+		  "project",
+		  "last",
+		  "weekend?"
+		]
+	  },
+	  {
+		"id": 9,
+		"sequence": 2,
+		"raw_sentence": "Yeah, I was trying to meet the deadline",
+		"err_i": -1,
+		"correct": "-",
+		"err_code": "paco",
+		"sentence": [
+		  "Yeah,",
+		  "I",
+		  "was",
+		  "trying",
+		  "to",
+		  "meet",
+		  "the",
+		  "deadline"
+		]
+	  },
+	  {
+		"id": 9,
+		"sequence": 3,
+		"raw_sentence": "Did you finishing it on time?",
+		"err_i": 2,
+		"correct": "finishing",
+		"err_code": "paco",
+		"sentence": [
+		  "Did",
+		  "you",
+		  "finishing",
+		  "it",
+		  "on",
+		  "time?"
+		]
+	  },
+	  {
+		"id": 9,
+		"sequence": 4,
+		"raw_sentence": "Barely. I stayed up until 1 am to get it done.",
+		"err_i": -1,
+		"correct": "-",
+		"err_code": "paco",
+		"sentence": [
+		  "Barely.",
+		  "I",
+		  "stayed",
+		  "up",
+		  "until",
+		  "1",
+		  "am",
+		  "to",
+		  "get",
+		  "it",
+		  "done."
+		]
+	  }
+	],
+	[
+	  {
+		"id": 10,
+		"sequence": 1,
+		"raw_sentence": "I heard that John did watching a movie at the cinema last night.",
+		"err_i": 4,
+		"correct": "was",
+		"err_code": "paco",
+		"sentence": [
+		  "I",
+		  "heard",
+		  "that",
+		  "John",
+		  "did",
+		  "watching",
+		  "a",
+		  "movie",
+		  "at",
+		  "the",
+		  "cinema",
+		  "last",
+		  "night."
+		]
+	  },
+	  {
+		"id": 10,
+		"sequence": 2,
+		"raw_sentence": "Really? I thought he was played soccer with his friends instead.",
+		"err_i": 5,
+		"correct": "playing",
+		"err_code": "paco",
+		"sentence": [
+		  "Really?",
+		  "I",
+		  "thought",
+		  "he",
+		  "was",
+		  "played",
+		  "soccer",
+		  "with",
+		  "his",
+		  "friends",
+		  "instead."
+		]
+	  },
+	  {
+		"id": 10,
+		"sequence": 3,
+		"raw_sentence": "No, I'm sure it was a movie. My sister were sitting next to him and she told me all about it.",
+		"err_i": 9,
+		"correct": "was",
+		"err_code": "paco",
+		"sentence": [
+		  "No,",
+		  "I'm",
+		  "sure",
+		  "it",
+		  "was",
+		  "a",
+		  "movie.",
+		  "My",
+		  "sister",
+		  "were",
+		  "sitting",
+		  "next",
+		  "to",
+		  "him",
+		  "and",
+		  "she",
+		  "told",
+		  "me",
+		  "all",
+		  "about",
+		  "it."
+		]
+	  }
+	],
+	[
+	  {
+		"id": 11,
+		"sequence": 1,
+		"raw_sentence": "What were you did when your phone battery died?",
+		"err_i": 3,
+		"correct": "doing",
+		"err_code": "paco",
+		"sentence": [
+		  "What",
+		  "were",
+		  "you",
+		  "did",
+		  "when",
+		  "your",
+		  "phone",
+		  "battery",
+		  "died?"
+		]
+	  },
+	  {
+		"id": 11,
+		"sequence": 2,
+		"raw_sentence": "I were texting my friend, and then it just went dead",
+		"err_i": 1,
+		"correct": "was",
+		"err_code": "paco",
+		"sentence": [
+		  "I",
+		  "were",
+		  "texting",
+		  "my",
+		  "friend,",
+		  "and",
+		  "then",
+		  "it",
+		  "just",
+		  "went",
+		  "dead"
+		]
+	  },
+	  {
+		"id": 11,
+		"sequence": 3,
+		"raw_sentence": "Were you worry about missing the group chat?",
+		"err_i": 2,
+		"correct": "worried",
+		"err_code": "paco",
+		"sentence": [
+		  "Were",
+		  "you",
+		  "worry",
+		  "about",
+		  "missing",
+		  "the",
+		  "group",
+		  "chat?"
+		]
+	  },
+	  {
+		"id": 11,
+		"sequence": 4,
+		"raw_sentence": "Yeah, a bit. We were plans a party and I didn't want to miss out.",
+		"err_i": 5,
+		"correct": "planning",
+		"err_code": "paco",
+		"sentence": [
+		  "Yeah,",
+		  "a",
+		  "bit.",
+		  "We",
+		  "were",
+		  "plans",
+		  "a",
+		  "party",
+		  "and",
+		  "I",
+		  "didn't",
+		  "want",
+		  "to",
+		  "miss",
+		  "out."
+		]
+	  }
+	],
+	[
+	  {
+		"id": 12,
+		"sequence": 1,
+		"raw_sentence": "Do you feeling unwell last week?",
+		"err_i": 0,
+		"correct": "Were",
+		"err_code": "paco",
+		"sentence": [
+		  "Do",
+		  "you",
+		  "feeling",
+		  "unwell",
+		  "last",
+		  "week?"
+		]
+	  },
+	  {
+		"id": 12,
+		"sequence": 2,
+		"raw_sentence": "Yeah, I was came down with a cold",
+		"err_i": 3,
+		"correct": "coming",
+		"err_code": "paco",
+		"sentence": [
+		  "Yeah,",
+		  "I",
+		  "was",
+		  "came",
+		  "down",
+		  "with",
+		  "a",
+		  "cold"
+		]
+	  },
+	  {
+		"id": 12,
+		"sequence": 3,
+		"raw_sentence": "Did you take any medicine?",
+		"err_i": -1,
+		"correct": "-",
+		"err_code": "paco",
+		"sentence": [
+		  "Did",
+		  "you",
+		  "take",
+		  "any",
+		  "medicine?"
+		]
+	  },
+	  {
+		"id": 12,
+		"sequence": 4,
+		"raw_sentence": "Yeah, my mom gave me some antibiotics. It's almost gone now.",
+		"err_i": -1,
+		"correct": "-",
+		"err_code": "paco",
+		"sentence": [
+		  "Yeah,",
+		  "my",
+		  "mom",
+		  "gave",
+		  "me",
+		  "some",
+		  "antibiotics.",
+		  "It's",
+		  "almost",
+		  "gone",
+		  "now."
+		]
+	  }
+	],
+	[
+	  {
+		"id": 13,
+		"sequence": 1,
+		"raw_sentence": "Did you practicing yoga yesterday morning?",
+		"err_i": 0,
+		"correct": "Were",
+		"err_code": "paco",
+		"sentence": [
+		  "Did",
+		  "you",
+		  "practicing",
+		  "yoga",
+		  "yesterday",
+		  "morning?"
+		]
+	  },
+	  {
+		"id": 13,
+		"sequence": 2,
+		"raw_sentence": "Yes, I was tried to get in shape for the summer",
+		"err_i": 3,
+		"correct": "trying",
+		"err_code": "paco",
+		"sentence": [
+		  "Yes,",
+		  "I",
+		  "was",
+		  "tried",
+		  "to",
+		  "get",
+		  "in",
+		  "shape",
+		  "for",
+		  "the",
+		  "summer"
+		]
+	  },
+	  {
+		"id": 13,
+		"sequence": 3,
+		"raw_sentence": "How's that going for you?",
+		"err_i": -1,
+		"correct": "-",
+		"err_code": "paco",
+		"sentence": [
+		  "How's",
+		  "that",
+		  "going",
+		  "for",
+		  "you?"
+		]
+	  },
+	  {
+		"id": 13,
+		"sequence": 4,
+		"raw_sentence": "It's going well so far. I've noticed an improvement in my flexibility already.",
+		"err_i": -1,
+		"correct": "-",
+		"err_code": "paco",
+		"sentence": [
+		  "It's",
+		  "going",
+		  "well",
+		  "so",
+		  "far.",
+		  "I've",
+		  "noticed",
+		  "an",
+		  "improvement",
+		  "in",
+		  "my",
+		  "flexibility",
+		  "already."
+		]
+	  }
+	],
+	[
+	  {
+		"id": 14,
+		"sequence": 1,
+		"raw_sentence": "Was you at the amusement park last Saturday?",
+		"err_i": 0,
+		"correct": "Were",
+		"err_code": "paco",
+		"sentence": [
+		  "Was",
+		  "you",
+		  "at",
+		  "the",
+		  "amusement",
+		  "park",
+		  "last",
+		  "Saturday?"
+		]
+	  },
+	  {
+		"id": 14,
+		"sequence": 2,
+		"raw_sentence": "Yeah, I was on that rollercoaster for hours!",
+		"err_i": -1,
+		"correct": "-",
+		"err_code": "paco",
+		"sentence": [
+		  "Yeah,",
+		  "I",
+		  "was",
+		  "on",
+		  "that",
+		  "rollercoaster",
+		  "for",
+		  "hours!"
+		]
+	  },
+	  {
+		"id": 14,
+		"sequence": 3,
+		"raw_sentence": "Were you scream the whole time?",
+		"err_i": 2,
+		"correct": "screaming",
+		"err_code": "paco",
+		"sentence": [
+		  "Were",
+		  "you",
+		  "scream",
+		  "the",
+		  "whole",
+		  "time?"
+		]
+	  },
+	  {
+		"id": 14,
+		"sequence": 4,
+		"raw_sentence": "Ha! You could hear me all over the park. It was so much fun!",
+		"err_i": -1,
+		"correct": "-",
+		"err_code": "paco",
+		"sentence": [
+		  "Ha!",
+		  "You",
+		  "could",
+		  "hear",
+		  "me",
+		  "all",
+		  "over",
+		  "the",
+		  "park.",
+		  "It",
+		  "was",
+		  "so",
+		  "much",
+		  "fun!"
+		]
+	  }
+	],
+	[
+	  {
+		"id": 15,
+		"sequence": 1,
+		"raw_sentence": "What were you did when your favorite TV show ended its season?",
+		"err_i": 3,
+		"correct": "doing",
+		"err_code": "paco",
+		"sentence": [
+		  "What",
+		  "were",
+		  "you",
+		  "did",
+		  "when",
+		  "your",
+		  "favorite",
+		  "TV",
+		  "show",
+		  "ended",
+		  "its",
+		  "season?"
+		]
+	  },
+	  {
+		"id": 15,
+		"sequence": 2,
+		"raw_sentence": "I were watching it live with my family!",
+		"err_i": 1,
+		"correct": "was",
+		"err_code": "paco",
+		"sentence": [
+		  "I",
+		  "were",
+		  "watching",
+		  "it",
+		  "live",
+		  "with",
+		  "my",
+		  "family!"
+		]
+	  },
+	  {
+		"id": 15,
+		"sequence": 3,
+		"raw_sentence": "Were you sad it was over?",
+		"err_i": -1,
+		"correct": "-",
+		"err_code": "paco",
+		"sentence": [
+		  "Were",
+		  "you",
+		  "sad",
+		  "it",
+		  "was",
+		  "over?"
+		]
+	  }
+	]
   ]
 }
