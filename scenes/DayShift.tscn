@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://p231ma1464qf"]
+[gd_scene load_steps=14 format=3 uid="uid://p231ma1464qf"]
 
-[ext_resource type="Texture2D" uid="uid://lc6jus06m0cu" path="res://mock-up/sky1.png" id="1_sk6nk"]
-[ext_resource type="Texture2D" uid="uid://b51udvmnhigow" path="res://mock-up/NPC1.png" id="2_um61k"]
-[ext_resource type="Texture2D" uid="uid://b7fv2uacj0djd" path="res://mock-up/street1.png" id="2_vsfli"]
+[ext_resource type="Texture2D" uid="uid://lc6jus06m0cu" path="res://assets/mock-up/sky1.png" id="1_sk6nk"]
+[ext_resource type="Texture2D" uid="uid://b7fv2uacj0djd" path="res://assets/mock-up/street1.png" id="2_vsfli"]
+[ext_resource type="Texture2D" uid="uid://7tp7e286bnch" path="res://assets/character/body.png" id="2_w3he4"]
 [ext_resource type="Script" path="res://scenes/PlayerCamera.gd" id="4_or7gr"]
 [ext_resource type="Script" path="res://scenes/DialogueController.gd" id="6_wbb4c"]
+[ext_resource type="PackedScene" uid="uid://bsjg8tmo5m7lg" path="res://sprite/npc-character.tscn" id="7_dl3ce"]
 [ext_resource type="PackedScene" uid="uid://b8mnx6cgqss1j" path="res://ui/investigation.tscn" id="7_mqdxw"]
 [ext_resource type="PackedScene" uid="uid://y7ke2edfixad" path="res://ui/appealing_panel.tscn" id="8_26xd4"]
 
@@ -36,7 +37,7 @@ disabled = true
 position = Vector2(206, 439)
 
 [node name="NPC" type="CharacterBody2D" parent="."]
-position = Vector2(208, 565)
+position = Vector2(623, 540)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC"]
 position = Vector2(-9, 19)
@@ -44,11 +45,29 @@ shape = SubResource("CircleShape2D_pko2m")
 disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC"]
-scale = Vector2(0.505, 0.505)
-texture = ExtResource("2_um61k")
+position = Vector2(-49.28, 73.28)
+scale = Vector2(0.40875, 0.361875)
+texture = ExtResource("2_w3he4")
+
+[node name="NPC2" type="CharacterBody2D" parent="."]
+position = Vector2(623, 540)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC2"]
+position = Vector2(-9, 19)
+shape = SubResource("CircleShape2D_pko2m")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC2"]
+position = Vector2(310, -41)
+scale = Vector2(0.243711, 0.361875)
+texture = ExtResource("2_w3he4")
+
+[node name="Sprite2D2" type="Sprite2D" parent="NPC2"]
+position = Vector2(756, 92)
+scale = Vector2(0.243711, 0.361875)
+texture = ExtResource("2_w3he4")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-visible = false
 scroll_limit_begin = Vector2(-1000, 0)
 scroll_limit_end = Vector2(1000, 0)
 
@@ -73,6 +92,11 @@ metadata/_edit_lock_ = true
 
 [node name="DialogueController" type="CanvasLayer" parent="."]
 script = ExtResource("6_wbb4c")
+
+[node name="Character" parent="DialogueController" instance=ExtResource("7_dl3ce")]
+visible = false
+position = Vector2(110, 440)
+scale = Vector2(6, 6)
 
 [node name="InvestigationPanel" parent="DialogueController" instance=ExtResource("7_mqdxw")]
 offset_top = -337.0

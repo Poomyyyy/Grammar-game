@@ -1,12 +1,13 @@
 [gd_scene load_steps=7 format=3 uid="uid://b8mnx6cgqss1j"]
 
-[ext_resource type="FontFile" uid="uid://ck20l4v37biai" path="res://fonts/NOTOSANSTHAILOOPED-BLACK.TTF" id="1_yvnpv"]
-[ext_resource type="FontFile" uid="uid://tu4oagvaro4u" path="res://fonts/NOTOSANSTHAILOOPED-BOLD.TTF" id="3_bdqds"]
+[ext_resource type="FontFile" uid="uid://ck20l4v37biai" path="res://assets/fonts/NOTOSANSTHAILOOPED-BLACK.TTF" id="1_yvnpv"]
+[ext_resource type="FontFile" uid="uid://tu4oagvaro4u" path="res://assets/fonts/NOTOSANSTHAILOOPED-BOLD.TTF" id="3_bdqds"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nckja"]
 bg_color = Color(0.941176, 0.690196, 0.203922, 1)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
+expand_margin_bottom = 20.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6oauj"]
 content_margin_left = 10.0
