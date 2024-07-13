@@ -1,5 +1,5 @@
-res://sprite/npc-character.tscn
-res://scenes/DialogueController.gd
 res://scenes/DayShift.tscn
+res://scenes/DialogueController.gd
 res://ui/investigation.tscn
 res://ui/appealing_panel.tscn
+res://sprite/npc-character.tscn

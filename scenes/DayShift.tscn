@@ -45,7 +45,7 @@ shape = SubResource("CircleShape2D_pko2m")
 disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC"]
-position = Vector2(-49.28, 73.28)
+position = Vector2(-968, 85)
 scale = Vector2(0.40875, 0.361875)
 texture = ExtResource("2_w3he4")
 
@@ -58,13 +58,13 @@ shape = SubResource("CircleShape2D_pko2m")
 disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC2"]
-position = Vector2(310, -41)
+position = Vector2(-467, -108)
 scale = Vector2(0.243711, 0.361875)
 texture = ExtResource("2_w3he4")
 
 [node name="Sprite2D2" type="Sprite2D" parent="NPC2"]
-position = Vector2(756, 92)
-scale = Vector2(0.243711, 0.361875)
+position = Vector2(76, -23)
+scale = Vector2(0.326553, 0.413249)
 texture = ExtResource("2_w3he4")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
