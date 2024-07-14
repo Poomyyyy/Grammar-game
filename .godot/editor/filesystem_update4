@@ -3,3 +3,7 @@ res://scenes/DialogueController.gd
 res://ui/investigation.tscn
 res://ui/appealing_panel.tscn
 res://sprite/npc-character.tscn
+res://scenes/InteractableNpc.gd
+res://script/progression.gd
+res://assets/conversation/paco.json
+res://ui/Word1.gd

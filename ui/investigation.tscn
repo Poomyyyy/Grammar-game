@@ -38,13 +38,14 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -276.0
+offset_top = -340.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_horizontal = 3
 
 [node name="DialogueMegaFrame" type="PanelContainer" parent="."]
 layout_mode = 2
+size_flags_vertical = 8
 theme_override_styles/panel = SubResource("StyleBoxFlat_nckja")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="DialogueMegaFrame"]
@@ -75,17 +76,18 @@ theme_override_colors/font_color = Color(0.144063, 0.144063, 0.144063, 1)
 theme_override_fonts/font = ExtResource("3_bdqds")
 theme_override_font_sizes/font_size = 22
 theme_override_styles/normal = SubResource("StyleBoxFlat_hgghf")
-text = "Ayyo its quandale dingle here. I have been arrested for the multiple crimes. Hola suidego"
+text = "I know, it's heartbreaking. We sitigate the damage that had already being done.
+"
 autowrap_mode = 2
 
-[node name="FrameSubmit" type="MarginContainer" parent="DialogueMegaFrame"]
+[node name="FrameSubmit" type="MarginContainer" parent="DialogueMegaFrame/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 8
 theme_override_constants/margin_left = 10
 theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 10
+theme_override_constants/margin_bottom = 20
 
-[node name="ButtonSubmit" type="Button" parent="DialogueMegaFrame/FrameSubmit"]
+[node name="ButtonSubmit" type="Button" parent="DialogueMegaFrame/VBoxContainer/FrameSubmit"]
 layout_mode = 2
 size_flags_vertical = 8
 theme_override_fonts/font = ExtResource("3_bdqds")

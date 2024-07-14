@@ -1,8 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://y7ke2edfixad"]
+[gd_scene load_steps=20 format=3 uid="uid://y7ke2edfixad"]
 
 [ext_resource type="FontFile" uid="uid://tu4oagvaro4u" path="res://assets/fonts/NOTOSANSTHAILOOPED-BOLD.TTF" id="1_cj3ja"]
+[ext_resource type="Texture2D" uid="uid://hv5lmfi6ha01" path="res://assets/icons/circular-progress-back.png" id="1_jaf3d"]
 [ext_resource type="FontFile" uid="uid://ck20l4v37biai" path="res://assets/fonts/NOTOSANSTHAILOOPED-BLACK.TTF" id="1_uhdx0"]
 [ext_resource type="FontFile" uid="uid://v3xhdl72fen1" path="res://assets/fonts/NOTOSANSTHAILOOPED-EXTRABOLD.TTF" id="2_52vt5"]
+[ext_resource type="Texture2D" uid="uid://c031e56dd5w1c" path="res://assets/icons/circular-progress-top.png" id="2_vximo"]
+[ext_resource type="Script" path="res://ui/Word1.gd" id="5_sdb72"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ni5ul"]
 
@@ -135,6 +138,24 @@ theme_override_constants/margin_bottom = 20
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_x2l50")
 
+[node name="TimerProgress" type="TextureProgressBar" parent="AppealingCanvas/Background"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -38.0
+offset_top = 10.5
+offset_right = -12.0
+offset_bottom = 36.5
+grow_horizontal = 0
+size_flags_horizontal = 8
+size_flags_vertical = 4
+fill_mode = 5
+nine_patch_stretch = true
+texture_under = ExtResource("1_jaf3d")
+texture_progress = ExtResource("2_vximo")
+tint_under = Color(0.959895, 0.890218, 0.833148, 1)
+
 [node name="VBoxContainer" type="VBoxContainer" parent="AppealingCanvas"]
 layout_mode = 2
 
@@ -191,6 +212,7 @@ theme_override_fonts/font = ExtResource("2_52vt5")
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = SubResource("StyleBoxFlat_y6uwb")
 text = "What"
+script = ExtResource("5_sdb72")
 
 [node name="Word2" type="Button" parent="AppealingCanvas/VBoxContainer/FrameSelection/Selection/HFlowContainer"]
 layout_mode = 2
