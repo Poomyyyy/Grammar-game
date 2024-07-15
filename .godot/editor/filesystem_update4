@@ -1,6 +1,7 @@
-res://scenes/DayShift.tscn
-res://scenes/DialogueController.gd
 res://ui/investigation.tscn
+res://scenes/DialogueController.gd
 res://ui/appealing_panel.tscn
 res://sprite/npc-character.tscn
 res://scenes/MainMenu.tscn
+res://Testnpcrandom/Npc.tscn
+res://Testnpcrandom/Charactor/charactortest.tscn

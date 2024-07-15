@@ -14,6 +14,10 @@ config/name="learingniproject"
 run/main_scene="res://scenes/MainMenu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 
+[autoload]
+
+Progression="*res://script/progression.gd"
+
 [display]
 
 window/size/viewport_width=413
