@@ -5,3 +5,4 @@ res://sprite/npc-character.tscn
 res://scenes/MainMenu.tscn
 res://Testnpcrandom/Npc.tscn
 res://Testnpcrandom/Charactor/charactortest.tscn
+res://Testnpcrandom/Charactor/charactortest.gd

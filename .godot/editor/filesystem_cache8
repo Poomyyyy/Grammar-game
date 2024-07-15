@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1721031451
+::res://::1721038003
 README.md::TextFile::-1::1720867204::0::1::::<><>::
 ::res://assets/::1720867204
 ::res://assets/character/::1721029384
@@ -57,10 +57,16 @@ homepage.gd::GDScript::-1::1720867204::0::1::::<>Node2D<>::
 progression.gd::GDScript::-1::1721029384::0::1::::<>Node<>::
 ::res://sprite/::1721029555
 npc-character.tscn::PackedScene::3668823519277683068::1721029555::0::1::::<><>::uid://7tp7e286bnch::::res://assets/character/body.png<>uid://bxyahceipgodi::::res://assets/character/paw-ear.png<>uid://ccoj2i8tv0mx3::::res://assets/character/skin5.png<>uid://duu1tn27a61b6::::res://assets/character/eye.png<>uid://btxcaqpm5ld5q::::res://assets/character/outline.png
-::res://Testnpcrandom/::1721031451
-::res://Testnpcrandom/Charactor/::1721031162
-charactortest.tscn::PackedScene::9162677847339926605::1721030143::0::1::::<><>::
-::res://Testnpcrandom/Wattudib/::1721031451
+::res://Testnpcrandom/::1721037783
+Npc.tscn::PackedScene::21290368484490205::1721036949::0::1::::<><>::
+::res://Testnpcrandom/Npc/::1721038003
+charactortest.tscn::PackedScene::9162677847339926605::1721032524::0::1::::<><>::uid://7tp7e286bnch::::res://assets/character/body.png<>uid://bxyahceipgodi::::res://assets/character/paw-ear.png<>uid://ccoj2i8tv0mx3::::res://assets/character/skin5.png<>uid://duu1tn27a61b6::::res://assets/character/eye.png<>uid://btxcaqpm5ld5q::::res://assets/character/outline.png
+npc.gd::GDScript::-1::1721035907::0::1::::<>CharacterBody2D<>::
+::res://Testnpcrandom/Npcspawn/::1721036337
+npc.tscn::PackedScene::4949093121825114913::1721036329::0::1::::<><>::uid://7tp7e286bnch::::res://assets/character/body.png<>uid://bxyahceipgodi::::res://assets/character/paw-ear.png<>uid://ccoj2i8tv0mx3::::res://assets/character/skin5.png<>uid://duu1tn27a61b6::::res://assets/character/eye.png<>uid://btxcaqpm5ld5q::::res://assets/character/outline.png
+npcspawn.tscn::PackedScene::7378363596287107905::1721035907::0::1::::<><>::
+npcspawner.gd::GDScript::-1::1721036293::0::1::::<>Node2D<>::
+::res://Testnpcrandom/Wattudib/::1721031452
 body.png::CompressedTexture2D::5007566700527506538::1721029384::1721031452::1::::<><>::
 eye.png::CompressedTexture2D::1770935615333075249::1720867204::1721031452::1::::<><>::
 outline.png::CompressedTexture2D::6891348425199518077::1720867204::1721031452::1::::<><>::

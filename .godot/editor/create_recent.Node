@@ -1,3 +1,4 @@
+Timer
 AnimationPlayer
 Sprite2D
 CharacterBody2D
@@ -8,8 +9,6 @@ Container
 TextureProgressBar
 ProgressBar
 Button
-Timer
 Panel
 TextureRect
 CollisionShape2D
-CanvasLayer
