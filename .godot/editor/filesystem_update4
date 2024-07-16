@@ -1,8 +1,9 @@
-res://ui/investigation.tscn
+res://Testnpcrandom/Npc/npc.tscn
 res://scenes/DialogueController.gd
-res://ui/appealing_panel.tscn
-res://sprite/npc-character.tscn
-res://scenes/MainMenu.tscn
+res://Testnpcrandom/Npcspawn/npcspawner.gd
 res://Testnpcrandom/Npc.tscn
-res://Testnpcrandom/Charactor/charactortest.tscn
-res://Testnpcrandom/Charactor/charactortest.gd
+res://sprite/npc-character.tscn
+res://Testnpcrandom/Npcspawn/npcspawn.tscn
+res://Testnpcrandom/Npcspawn/npcspwn.tscn
+res://Testnpcrandom/Npc/npc2.tscn
+res://Testnpcrandom/Npc/npc.gd
