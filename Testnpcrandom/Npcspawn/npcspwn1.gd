@@ -1,7 +1,7 @@
 extends Node2D
 var npc = preload("res://Testnpcrandom/Wattudib/Npc.tscn")
 
-@onready var timer = $Node2D/MyTimer
+var timer
 
 var timespwn : int = 1
 
@@ -33,7 +33,8 @@ var timespwn : int = 1
 												Color("#fffaf4"),Color("#f9eeda"),Color("#d8783b"),Color("#ca5f19"),]
 
 func _ready():
-		timer.start(timespwn)
+	timer = $"../Timer"
+	timer.start(timespwn)
 		
 func spawn():
 	var instance = npc.instance()

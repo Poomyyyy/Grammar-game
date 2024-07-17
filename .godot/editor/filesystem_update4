@@ -1,12 +1,8 @@
+res://Testnpcrandom/Npcspawn/npcspawn.tscn
+res://ui/appealing_panel.tscn
 res://Testnpcrandom/Npc/npc2.tscn
 res://Testnpcrandom/Npc/npc.tscn
-res://Testnpcrandom/Npcspawn/npcspawn.tscn
 res://Testnpcrandom/Npcspawn/npcspwn.tscn
-res://Testnpcrandom/Wattudib/Npc.tscn
-res://Testnpcrandom/Wattudib/NPcTest.tscn
-res://assets/scenes/MainMenu.tscn
-res://sprite/npc-character.tscn
-res://Testnpcrandom/Npcspawn/npcspawner.gd
-res://Testnpcrandom/Npc/npc.gd
 res://Testnpcrandom/Npcspawn/npcspwn1.gd
-res://Testnpcrandom/Npcspawn/npcspwnT2.gd
+res://scenes/DayShift.tscn
+res://scenes/DialogueController.gd
