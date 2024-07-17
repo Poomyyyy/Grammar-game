@@ -1,9 +1,7 @@
-res://Testnpcrandom/Npc/npc.tscn
+res://Testnpcrandom/Npc/npc2.tscn
 res://scenes/DialogueController.gd
-res://Testnpcrandom/Npcspawn/npcspawner.gd
-res://Testnpcrandom/Npc.tscn
-res://sprite/npc-character.tscn
+res://Testnpcrandom/Npc/npc.tscn
 res://Testnpcrandom/Npcspawn/npcspawn.tscn
 res://Testnpcrandom/Npcspawn/npcspwn.tscn
-res://Testnpcrandom/Npc/npc2.tscn
-res://Testnpcrandom/Npc/npc.gd
+res://Testnpcrandom/Wattudib/Npc.tscn
+res://Testnpcrandom/Wattudib/NPcTest.tscn

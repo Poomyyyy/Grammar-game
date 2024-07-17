@@ -1,31 +1,24 @@
-extends CharacterBody2D
-
-const GRAVITY = 200
-const MAX_SPEED = 200
-const JUMP_FORCE = 100
-
-@onready var body = $Body
-@onready var paw = $Paw
-@onready var skin = $Skin
-@onready var eye = $Eye
-@onready var outline = $Outline
-
-func _on_Body_frame_changed():
-	sync_frames(body.frame, body.flip_h)
-
-func sync_frames(frame, flip_h):
-	body.frame = frame
-	paw.frame = frame
-	skin.frame = frame
-	eye.frame = frame
-	outline.frame = frame
-	
-	body.flip_h = flip_h
-	paw.flip_h = flip_h
-	skin.flip_h = flip_h
-	eye.flip_h = flip_h
-	outline.flip_h = flip_h
+extends "res://Testnpcrandom/Wattudib/NPcTTTTT.gd"
 
 var npcbodycolors
+var npcpawcolors
+var npcskincolors
 var npceyecolors
-func initialize(_)
+var npcoutlinecolors
+
+func initialize(_body,_paw, _skin, _eye, _outline ):
+	npcbodycolors = _body
+	npcpawcolors = _paw
+	npcskincolors = _skin
+	npceyecolors = _eye
+	npcoutlinecolors = _outline
+func _ready():
+	body.self.modulate = npcbodycolors
+	paw.self.modulate = npcpawcolors
+	skin.self.modulate = npcskincolors
+	eye.self.modulate = npceyecolors
+	eye.self.modulate = npceyecolors
+
+	#func _physics_process(delta):
+	#velocity.y += delta
+	#move_and_slide()

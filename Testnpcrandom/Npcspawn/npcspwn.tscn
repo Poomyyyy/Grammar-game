@@ -25,31 +25,33 @@ _data = {
 }
 
 [node name="Charactortest" type="CharacterBody2D"]
+position = Vector2(175, 200)
+scale = Vector2(0.511, 0.511)
 
 [node name="Body" type="Sprite2D" parent="."]
 modulate = Color(0.937804, 0.932386, 0.981007, 1)
 position = Vector2(2.38419e-07, 0)
-scale = Vector2(0.0605469, 0.0605469)
+scale = Vector2(0.511, 0.511)
 texture = ExtResource("1_ggf4y")
 
 [node name="Paw" type="Sprite2D" parent="."]
 modulate = Color(0.998075, 0.990423, 0.977305, 1)
-scale = Vector2(0.0605469, 0.0605469)
+scale = Vector2(0.511, 0.511)
 texture = ExtResource("2_tfew7")
 
 [node name="Skin" type="Sprite2D" parent="."]
 modulate = Color(0.38301, 0.327384, 0.250741, 1)
-scale = Vector2(0.0605469, 0.0605469)
+scale = Vector2(0.511, 0.511)
 texture = ExtResource("3_fx61u")
 
 [node name="Eye" type="Sprite2D" parent="."]
 modulate = Color(0.449148, 0.888269, 0.746009, 1)
-scale = Vector2(0.0605469, 0.0605469)
+scale = Vector2(0.511, 0.511)
 texture = ExtResource("4_1ocs5")
 
 [node name="Outline" type="Sprite2D" parent="."]
 modulate = Color(0.981073, 0.924227, 0.916946, 1)
-scale = Vector2(0.0605469, 0.0605469)
+scale = Vector2(0.511, 0.511)
 texture = ExtResource("5_wm7iw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -1,7 +1,7 @@
-Timer
-AnimationPlayer
 Sprite2D
 CharacterBody2D
+Timer
+AnimationPlayer
 PointLight2D
 CheckButton
 PanelContainer

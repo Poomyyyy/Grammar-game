@@ -26,37 +26,39 @@ _data = {
 }
 
 [node name="Charactortest" type="CharacterBody2D"]
+position = Vector2(186, 168)
+scale = Vector2(0.525, 0.525)
 script = ExtResource("1_07j8c")
 
 [node name="Body" type="Sprite2D" parent="."]
 modulate = Color(0.937804, 0.932386, 0.981007, 1)
 position = Vector2(2.38419e-07, 0)
-scale = Vector2(0.0605469, 0.0605469)
+scale = Vector2(0.525, 0.525)
 texture = ExtResource("1_70csd")
 
 [node name="Paw" type="Sprite2D" parent="."]
 modulate = Color(0.998075, 0.990423, 0.977305, 1)
-scale = Vector2(0.0605469, 0.0605469)
+scale = Vector2(0.525, 0.525)
 texture = ExtResource("2_ds4jj")
 
 [node name="Skin" type="Sprite2D" parent="."]
 modulate = Color(0.38301, 0.327384, 0.250741, 1)
-scale = Vector2(0.0605469, 0.0605469)
+scale = Vector2(0.525, 0.525)
 texture = ExtResource("3_ygkro")
 
 [node name="Eye" type="Sprite2D" parent="."]
 modulate = Color(0.449148, 0.888269, 0.746009, 1)
-scale = Vector2(0.0605469, 0.0605469)
+scale = Vector2(0.525, 0.525)
 texture = ExtResource("4_0w4er")
 
 [node name="Outline" type="Sprite2D" parent="."]
 modulate = Color(0.981073, 0.924227, 0.916946, 1)
-scale = Vector2(0.0605469, 0.0605469)
+scale = Vector2(0.525, 0.525)
 texture = ExtResource("5_d2ab4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 texture_filter = 1
+scale = Vector2(0.525, 0.525)
 shape = SubResource("CapsuleShape2D_vkcf5")
 debug_color = Color(1.54018e-06, 0.842348, 0.979347, 0.42)
 

@@ -1,12 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://bsjg8tmo5m7lg"]
+[gd_scene load_steps=7 format=3 uid="uid://dcodaa8w2g5nn"]
 
-[ext_resource type="Texture2D" uid="uid://7tp7e286bnch" path="res://assets/character/body.png" id="1_d148l"]
-[ext_resource type="Texture2D" uid="uid://bxyahceipgodi" path="res://assets/character/paw-ear.png" id="2_tg18r"]
-[ext_resource type="Texture2D" uid="uid://ccoj2i8tv0mx3" path="res://assets/character/skin5.png" id="3_h0xvl"]
-[ext_resource type="Texture2D" uid="uid://duu1tn27a61b6" path="res://assets/character/eye.png" id="4_n7l84"]
-[ext_resource type="Texture2D" uid="uid://btxcaqpm5ld5q" path="res://assets/character/outline.png" id="5_gk071"]
+[ext_resource type="Texture2D" uid="uid://7tp7e286bnch" path="res://assets/character/body.png" id="2_v8lsn"]
+[ext_resource type="Texture2D" uid="uid://bxyahceipgodi" path="res://assets/character/paw-ear.png" id="3_w1k3c"]
+[ext_resource type="Texture2D" uid="uid://ccoj2i8tv0mx3" path="res://assets/character/skin5.png" id="4_wkrx7"]
+[ext_resource type="Texture2D" uid="uid://duu1tn27a61b6" path="res://assets/character/eye.png" id="5_s8226"]
+[ext_resource type="Texture2D" uid="uid://btxcaqpm5ld5q" path="res://assets/character/outline.png" id="6_c177x"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hp4xe"]
+radius = 42.0
+height = 134.0
 
 [node name="Character" type="CharacterBody2D"]
 position = Vector2(203, 195)
@@ -15,34 +17,34 @@ position = Vector2(203, 195)
 modulate = Color(0.981073, 0.924227, 0.916946, 1)
 position = Vector2(-16.328, 24.672)
 scale = Vector2(0.306, 0.306)
-texture = ExtResource("1_d148l")
+texture = ExtResource("2_v8lsn")
 
 [node name="Paw" type="Sprite2D" parent="."]
 modulate = Color(0.998075, 0.990423, 0.977305, 1)
 position = Vector2(-16.328, 24.672)
 scale = Vector2(0.306, 0.306)
-texture = ExtResource("2_tg18r")
+texture = ExtResource("3_w1k3c")
 
 [node name="Skin" type="Sprite2D" parent="."]
 modulate = Color(0.38301, 0.327384, 0.250741, 1)
 position = Vector2(-16.328, 24.672)
 scale = Vector2(0.306, 0.306)
-texture = ExtResource("3_h0xvl")
+texture = ExtResource("4_wkrx7")
 
 [node name="Eye" type="Sprite2D" parent="."]
 modulate = Color(0.449148, 0.888269, 0.746009, 1)
 position = Vector2(-16.328, 24.672)
 scale = Vector2(0.306, 0.306)
-texture = ExtResource("4_n7l84")
+texture = ExtResource("5_s8226")
 
 [node name="Outline" type="Sprite2D" parent="."]
 modulate = Color(0.981073, 0.924227, 0.916946, 1)
 position = Vector2(-16.328, 24.672)
 scale = Vector2(0.306, 0.306)
-texture = ExtResource("5_gk071")
+texture = ExtResource("6_c177x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 texture_filter = 1
+position = Vector2(-14, 98)
 shape = SubResource("CapsuleShape2D_hp4xe")
 debug_color = Color(1.54018e-06, 0.842348, 0.979347, 0.42)
