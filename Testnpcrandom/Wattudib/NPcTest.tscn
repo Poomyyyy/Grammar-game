@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dcodaa8w2g5nn"]
+[gd_scene load_steps=7 format=3 uid="uid://wxmgbrl0x6h5"]
 
 [ext_resource type="Texture2D" uid="uid://7tp7e286bnch" path="res://assets/character/body.png" id="2_v8lsn"]
 [ext_resource type="Texture2D" uid="uid://bxyahceipgodi" path="res://assets/character/paw-ear.png" id="3_w1k3c"]

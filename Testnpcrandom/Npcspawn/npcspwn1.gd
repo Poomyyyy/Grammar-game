@@ -1,8 +1,9 @@
 extends Node2D
-var npc = preload("res://Testnpcrandom/Npc/npc.tscn")
+var npc = preload("res://Testnpcrandom/Wattudib/Npc.tscn")
 
-@onready var timer = $Timer
-@export var timespwn : int = 1 #seconds to wait spawning another npc
+@onready var timer = $Node2D/MyTimer
+
+var timespwn : int = 1
 
 @export var npcbodycolors : PackedColorArray = [Color("#ffb892"), Color("#ec9a74"), Color("#d77e5e"), Color("#ac6758"),
 												Color("#ceced8"),Color("#adadb7"),Color("#7f7e8c"),Color("#60606a"),
@@ -32,12 +33,12 @@ var npc = preload("res://Testnpcrandom/Npc/npc.tscn")
 												Color("#fffaf4"),Color("#f9eeda"),Color("#d8783b"),Color("#ca5f19"),]
 
 func _ready():
-	timer.start(timespwn)
-	
+		timer.start(timespwn)
+		
 func spawn():
 	var instance = npc.instance()
 	var pos = Vector2(position.x + randf_range(0,10), position.y) #position spwn npc
-	instance.initialize(pos, randitem(npcbodycolors), randitem(npcpawcolors),randitem(npcskincolors),randitem(npceyecolors),randitem(npcoutlinecolors) )
+	instance.initialize(pos, randitem(npcbodycolors), randitem(npcpawcolors),randitem(npcskincolors),randitem(npceyecolors),randitem(npcoutlinecolors))
 	get_tree().current_scene.add_child(instance)
 
 func randitem(array : Array):
