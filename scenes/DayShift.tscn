@@ -55,7 +55,11 @@ disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="InteractableNpc"]
 position = Vector2(-907.72, -76.72)
+<<<<<<< Updated upstream
 scale = Vector2(0.370547, 0.370547)
+=======
+scale = Vector2(0.333437, 0.333437)
+>>>>>>> Stashed changes
 texture = ExtResource("2_w3he4")
 
 [node name="InteractButton" type="Button" parent="InteractableNpc"]

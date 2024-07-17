@@ -13,6 +13,8 @@ func _ready():
 	var InvestButton = get_node("InvestigationPanel/DialogueMegaFrame/VBoxContainer/FrameSubmit/ButtonSubmit")	
 	InvestButton.connect("button_down", open_appeal)
 
+
+
 func _on_toggle_area_button_down():
 	close_appeal()
 	pass # Replace with function body.
@@ -35,7 +37,10 @@ func open_dialogue():
 
 @onready var CurrentSubject
 @onready var WaitTime = 10
+@onready var CurrentWord
 
+func _set_word(word):
+	CurrentWord = word
 
 func open_appeal():
 	var AppealPanel = $AppealingPanel
@@ -50,7 +55,9 @@ func open_appeal():
 	
 	timer.start()
 	create_tween().tween_property(AppealTimerProgress, 'value', 100, WaitTime)
+	AppealPanel._generate_sentence(CurrentSubject)
 	
+	print(CurrentSubject)
 	
 	await timer.timeout
 	close_appeal()
@@ -79,7 +86,7 @@ func dialogue_controller(DialogueProgress):
 	var data
 	if error == OK:
 		data = json.data
-		print("OK " + DialoguePath[0])  # This will print the parsed JSON data
+		print("reading -> " + DialoguePath[0])  # This will print the parsed JSON data
 	else:
 		data = "none"
 		print("Error parsing JSON: ", json.get_error_message())

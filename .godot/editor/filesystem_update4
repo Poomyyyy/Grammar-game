@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 res://Testnpcrandom/Npcspawn/npcspawn.tscn
 res://ui/appealing_panel.tscn
 res://Testnpcrandom/Npc/npc2.tscn
@@ -6,3 +7,12 @@ res://Testnpcrandom/Npcspawn/npcspwn.tscn
 res://Testnpcrandom/Npcspawn/npcspwn1.gd
 res://scenes/DayShift.tscn
 res://scenes/DialogueController.gd
+=======
+res://ui/appealing_panel.gd
+res://ui/appealing_panel.tscn
+res://scenes/DialogueController.gd
+res://ui/Word1.gd
+res://Testnpcrandom/Npc.tscn
+res://Testnpcrandom/Npcspawn/npcspawn.tscn
+res://scenes/DayShift.tscn
+>>>>>>> Stashed changes
