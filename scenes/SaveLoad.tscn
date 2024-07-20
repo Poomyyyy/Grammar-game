@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://rxnxnh6h22w1"]
+[gd_scene load_steps=8 format=3 uid="uid://rxnxnh6h22w1"]
 
+[ext_resource type="Script" path="res://script/SaveLoad.gd" id="1_3bpf1"]
 [ext_resource type="FontFile" uid="uid://tu4oagvaro4u" path="res://assets/fonts/NOTOSANSTHAILOOPED-BOLD.TTF" id="1_karq5"]
 [ext_resource type="Texture2D" uid="uid://cmbqpp8ajkt5m" path="res://assets/icons/arrow-back.svg" id="2_ic41a"]
 
@@ -41,6 +42,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_3bpf1")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
@@ -123,3 +125,5 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_3dx30")
 
 [node name="VScrollBar" type="VScrollBar" parent="PanelContainer/MarginContainer/VSplitContainer/ScrollContainer/VBoxContainer"]
 layout_mode = 2
+
+[connection signal="button_down" from="PanelContainer/MarginContainer/VSplitContainer/ScrollContainer/VBoxContainer/Save/LoadSaveButton" to="." method="_on_load_save_button_button_down"]

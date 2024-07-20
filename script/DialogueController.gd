@@ -4,6 +4,8 @@ extends CanvasLayer
 @onready var viewsize = get_viewport()
 @onready var panel = $InvestigationPanel
 @onready var timer = $AppealTimer
+@onready var DialogueTimer = $DialogueTimer
+@onready var WordLen
 
 var InsultaSentence = [
 	"Can't you just leave me alone?",
@@ -90,10 +92,10 @@ func open_appeal():
 	if timer.is_stopped():
 		timer.start()
 		create_tween().tween_property(AppealTimerProgress, 'value', 100, WaitTime)
-	AppealPanel._generate_sentence(CurrentSubject)
+	AppealPanel._generate_sentence(CurrentSubject, WordLen)
 	
 	print(CurrentSubject)
-	
+	progress.SentenceProgress += 1
 	await timer.timeout
 	close_appeal()
 	
@@ -146,6 +148,8 @@ func dialogue_controller(DialogueProgress):
 		InvestText.visible_ratio = 0.0
 		InvestText.text = words # set text
 		
+		WordLen = words.length()
+		
 		print("run dialogue")
 		panel._focus()
 		
@@ -154,10 +158,12 @@ func dialogue_controller(DialogueProgress):
 			ToggleAppeal = true
 		
 		## Waiting Base + Appealing
-		await get_tree().create_timer(words.length() * 0.05 + 3).timeout
+		DialogueTimer.wait_time = words.length() * 0.05 + 3
+		DialogueTimer.start()
+		print("start tick")
+		await DialogueTimer.timeout
 		if !timer.is_stopped():
 			await timer.timeout
 			print("timeout")
-			
 	file.close()
 	return true

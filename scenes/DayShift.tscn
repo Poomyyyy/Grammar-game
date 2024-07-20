@@ -1,41 +1,73 @@
-[gd_scene load_steps=14 format=3 uid="uid://p231ma1464qf"]
+[gd_scene load_steps=20 format=3 uid="uid://p231ma1464qf"]
 
-[ext_resource type="Texture2D" uid="uid://lc6jus06m0cu" path="res://assets/mock-up/sky1.png" id="1_sk6nk"]
 [ext_resource type="Script" path="res://script/InteractableNpc.gd" id="2_kdxtk"]
-[ext_resource type="Texture2D" uid="uid://b7fv2uacj0djd" path="res://assets/mock-up/street1.png" id="2_vsfli"]
 [ext_resource type="Texture2D" uid="uid://7tp7e286bnch" path="res://assets/character/body.png" id="2_w3he4"]
+[ext_resource type="Texture2D" uid="uid://r8twxdilo1vq" path="res://assets/scene-bg/past/background.png" id="3_t6xp2"]
+[ext_resource type="Texture2D" uid="uid://bsqbmt7l82tfl" path="res://assets/scene-bg/past/midground.png" id="4_4s46c"]
 [ext_resource type="Script" path="res://script/PlayerCamera.gd" id="4_or7gr"]
+[ext_resource type="Texture2D" uid="uid://c2auatg1na1gj" path="res://assets/scene-bg/past/foreground.png" id="5_uyjvm"]
 [ext_resource type="Script" path="res://script/DialogueController.gd" id="6_wbb4c"]
+[ext_resource type="Texture2D" uid="uid://qorkexq4pvo2" path="res://assets/character/skin1.png" id="7_kbsnh"]
 [ext_resource type="PackedScene" uid="uid://b8mnx6cgqss1j" path="res://ui/investigation.tscn" id="7_mqdxw"]
 [ext_resource type="PackedScene" uid="uid://y7ke2edfixad" path="res://ui/appealing_panel.tscn" id="8_26xd4"]
-
-[sub_resource type="Gradient" id="Gradient_8qa7c"]
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_avvyh"]
-gradient = SubResource("Gradient_8qa7c")
+[ext_resource type="Texture2D" uid="uid://duu1tn27a61b6" path="res://assets/character/eye.png" id="8_a8pqa"]
+[ext_resource type="Texture2D" uid="uid://bxyahceipgodi" path="res://assets/character/paw-ear.png" id="9_25t5r"]
+[ext_resource type="PackedScene" uid="uid://bvr4ca5g51gh3" path="res://ui/ResultPanel.tscn" id="9_qg8bf"]
+[ext_resource type="Script" path="res://ui/ResultPanel.gd" id="14_ruvyh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cwamg"]
-radius = 14.4005
+radius = 10.7703
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_abdxm"]
+draw_center = false
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pko2m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5bjhy"]
+draw_center = false
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kdoax"]
 bg_color = Color(0.244776, 0.244776, 0.244776, 1)
 
 [node name="DayShift" type="Node2D"]
+metadata/_edit_vertical_guides_ = [417.0]
 
-[node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(334, 185)
-scale = Vector2(10.3281, 12.9844)
-energy = 11.95
-texture = SubResource("GradientTexture2D_avvyh")
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+
+[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground2"]
+position = Vector2(237, 0)
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(878, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/Sky"]
+position = Vector2(203, 447.18)
+scale = Vector2(0.900769, 0.894359)
+texture = ExtResource("3_t6xp2")
+
+[node name="MidGround" type="ParallaxLayer" parent="ParallaxBackground2"]
+position = Vector2(237, 0)
+motion_scale = Vector2(0.7, 0.7)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/MidGround"]
+position = Vector2(203, 447.18)
+scale = Vector2(0.900769, 0.894359)
+texture = ExtResource("4_4s46c")
+
+[node name="ForeGround" type="ParallaxLayer" parent="ParallaxBackground2"]
+position = Vector2(237, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/ForeGround"]
+position = Vector2(203, 447.18)
+scale = Vector2(0.900769, 0.894359)
+texture = ExtResource("5_uyjvm")
 
 [node name="PlayerCamera" type="CharacterBody2D" parent="."]
 position = Vector2(0, 6)
 script = ExtResource("4_or7gr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCamera"]
-position = Vector2(-643.194, 165.095)
+visible = false
+position = Vector2(-403, 424)
 shape = SubResource("CircleShape2D_cwamg")
 disabled = true
 
@@ -45,6 +77,106 @@ position = Vector2(206, 439)
 [node name="InteractableNpc" type="CharacterBody2D" parent="."]
 position = Vector2(1096, 507)
 script = ExtResource("2_kdxtk")
+
+[node name="PersonR" type="Panel" parent="InteractableNpc"]
+z_index = -2
+offset_left = -1050.0
+offset_top = -159.0
+offset_right = -622.0
+offset_bottom = 288.0
+pivot_offset = Vector2(215.855, 253)
+theme_override_styles/panel = SubResource("StyleBoxFlat_abdxm")
+
+[node name="PersonL" type="TextureRect" parent="InteractableNpc/PersonR"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(215, 247.159)
+texture = ExtResource("2_w3he4")
+expand_mode = 1
+
+[node name="Skin" type="TextureRect" parent="InteractableNpc/PersonR"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_kbsnh")
+expand_mode = 1
+
+[node name="Eye" type="TextureRect" parent="InteractableNpc/PersonR"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_a8pqa")
+expand_mode = 1
+
+[node name="Paw" type="TextureRect" parent="InteractableNpc/PersonR"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_25t5r")
+expand_mode = 1
+
+[node name="PersonR2" type="Panel" parent="InteractableNpc"]
+z_index = -2
+offset_left = -817.0
+offset_top = -159.0
+offset_right = -389.0
+offset_bottom = 288.0
+pivot_offset = Vector2(215.855, 253)
+theme_override_styles/panel = SubResource("StyleBoxFlat_abdxm")
+
+[node name="PersonL" type="TextureRect" parent="InteractableNpc/PersonR2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(215, 247.159)
+texture = ExtResource("2_w3he4")
+expand_mode = 1
+
+[node name="Skin" type="TextureRect" parent="InteractableNpc/PersonR2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_kbsnh")
+expand_mode = 1
+
+[node name="Eye" type="TextureRect" parent="InteractableNpc/PersonR2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_a8pqa")
+expand_mode = 1
+
+[node name="Paw" type="TextureRect" parent="InteractableNpc/PersonR2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_25t5r")
+expand_mode = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableNpc"]
 visible = false
@@ -57,50 +189,20 @@ position = Vector2(-907.72, -76.72)
 scale = Vector2(0.333437, 0.333437)
 
 [node name="InteractButton" type="Button" parent="InteractableNpc"]
-offset_left = -1020.0
-offset_top = -260.0
-offset_right = -797.0
-offset_bottom = 107.0
+offset_left = -947.0
+offset_top = -127.0
+offset_right = -724.0
+offset_bottom = 240.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_5bjhy")
 metadata/_edit_use_anchors_ = true
-
-[node name="NPC2" type="CharacterBody2D" parent="."]
-position = Vector2(623, 540)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC2"]
-position = Vector2(-9, 19)
-shape = SubResource("CircleShape2D_pko2m")
-disabled = true
-
-[node name="Sprite2D" type="Sprite2D" parent="NPC2"]
-position = Vector2(171.61, 4)
-scale = Vector2(0.664824, 0.361875)
-texture = ExtResource("2_w3he4")
-
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-scroll_limit_begin = Vector2(-1000, 0)
-scroll_limit_end = Vector2(1000, 0)
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2(0.55, 0.55)
-motion_mirroring = Vector2(1127, 0)
-
-[node name="sky" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(563, 307.5)
-scale = Vector2(0.878505, 1.04167)
-texture = ExtResource("1_sk6nk")
-metadata/_edit_lock_ = true
-
-[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_mirroring = Vector2(1127, 0)
-
-[node name="street" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
-position = Vector2(562.841, 307)
-scale = Vector2(0.880311, 1.86494)
-texture = ExtResource("2_vsfli")
-metadata/_edit_lock_ = true
 
 [node name="DialogueController" type="CanvasLayer" parent="."]
 script = ExtResource("6_wbb4c")
+
+[node name="DialogueTimer" type="Timer" parent="DialogueController"]
+process_callback = 0
+wait_time = 3.0
+one_shot = true
 
 [node name="AppealTimer" type="Timer" parent="DialogueController"]
 process_callback = 0
@@ -148,13 +250,14 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = -18.5
-offset_right = 97.0
-offset_bottom = 18.5
+offset_left = 13.0
+offset_top = -18.0
+offset_right = 110.0
+offset_bottom = 19.0
 grow_vertical = 2
 text = "guide"
 
-[node name="guide2" type="Button" parent="DialogueController/ButtomMargin"]
+[node name="menu" type="Button" parent="DialogueController/ButtomMargin"]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -166,7 +269,27 @@ offset_bottom = 18.5
 grow_vertical = 2
 text = "menu"
 
+[node name="save" type="Button" parent="DialogueController/ButtomMargin"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 300.0
+offset_top = -18.5
+offset_right = 397.0
+offset_bottom = 18.5
+grow_vertical = 2
+text = "save"
+
+[node name="ResultPanel" parent="DialogueController" instance=ExtResource("9_qg8bf")]
+offset_top = 271.0
+offset_bottom = 773.0
+script = ExtResource("14_ruvyh")
+
 [connection signal="button_down" from="InteractableNpc/InteractButton" to="InteractableNpc" method="_on_interact_button_button_down"]
 [connection signal="button_down" from="DialogueController/AppealToggle" to="DialogueController" method="_on_toggle_area_button_down"]
 [connection signal="button_down" from="DialogueController/ButtomMargin/guide" to="DialogueController" method="_on_test_1_button_down"]
-[connection signal="button_down" from="DialogueController/ButtomMargin/guide2" to="DialogueController" method="_on_test_1_button_down"]
+[connection signal="button_down" from="DialogueController/ButtomMargin/menu" to="DialogueController" method="_on_test_1_button_down"]
+[connection signal="button_down" from="DialogueController/ButtomMargin/save" to="DialogueController" method="_on_test_1_button_down"]
+
+[editable path="DialogueController/AppealingPanel"]

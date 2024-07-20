@@ -1,0 +1,122 @@
+[gd_scene load_steps=6 format=3 uid="uid://dqyr5oa3bcqqo"]
+
+[ext_resource type="Script" path="res://scenes/Summary.gd" id="1_y6lpb"]
+[ext_resource type="FontFile" uid="uid://tu4oagvaro4u" path="res://assets/fonts/NOTOSANSTHAILOOPED-BOLD.TTF" id="2_a7yyd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hvdct"]
+bg_color = Color(0.180005, 0.180005, 0.180005, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lhlpx"]
+content_margin_left = 40.0
+content_margin_top = 20.0
+content_margin_bottom = 10.0
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3dbbh"]
+bg_color = Color(0.923311, 0.594717, 0.132205, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="Summary" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y6lpb")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_hvdct")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 188.0
+offset_bottom = 263.0
+grow_horizontal = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_a7yyd")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_lhlpx")
+text = "จบวัน"
+horizontal_alignment = 1
+
+[node name="Title2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 227.0
+offset_bottom = 302.0
+grow_horizontal = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_a7yyd")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_lhlpx")
+text = "ผลประกอบการ"
+horizontal_alignment = 1
+
+[node name="Title3" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 337.0
+offset_bottom = 412.0
+grow_horizontal = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_a7yyd")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_lhlpx")
+text = "จับกุมสำเร็จ x3 คน"
+horizontal_alignment = 1
+
+[node name="Title4" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 375.0
+offset_bottom = 450.0
+grow_horizontal = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_a7yyd")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_lhlpx")
+text = "438 แต้ม"
+horizontal_alignment = 1
+
+[node name="Title5" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 434.0
+offset_bottom = 509.0
+grow_horizontal = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_a7yyd")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_lhlpx")
+text = "ระดับตอนนี้ Past Simple
+อีก 20 แต้มจะขึ้น Past Continuous"
+horizontal_alignment = 1
+
+[node name="ButtonSubmit3" type="Button" parent="."]
+layout_mode = 2
+offset_left = 22.0
+offset_top = 660.0
+offset_right = 391.0
+offset_bottom = 712.0
+theme_override_fonts/font = ExtResource("2_a7yyd")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_3dbbh")
+text = "วันต่อไป"
+
+[connection signal="button_down" from="ButtonSubmit3" to="." method="_on_button_submit_3_button_down"]

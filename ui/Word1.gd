@@ -1,6 +1,8 @@
 extends Button
 
 var MainDialogue
+var index = 0
+
 @onready var Submit = $"../../../../../.."
 
 func _ready():

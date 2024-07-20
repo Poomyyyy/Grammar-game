@@ -11,3 +11,15 @@ res://ui/investigation.tscn
 res://ui/CharacterDialogue.gd
 res://scenes/SaveLoad.tscn
 res://script/MainMenu.gd
+res://script/SaveLoad.gd
+res://ui/ResultPanel.tscn
+res://script/PlayerCamera.gd
+res://Testnpcrandom/Npcspawn/npcspawn.tscn
+res://script/DialogueController.gd
+res://ui/Word1.gd
+res://scenes/Choice.tscn
+res://scenes/Summary.tscn
+res://scenes/Summary.gd
+res://scenes/Choice.gd
+res://assets/conversation/paco.json
+res://ui/ResultPanel.gd

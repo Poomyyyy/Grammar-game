@@ -1,0 +1,101 @@
+[gd_scene load_steps=6 format=3 uid="uid://drjtc2g67ptt3"]
+
+[ext_resource type="Script" path="res://scenes/Choice.gd" id="1_yj5cn"]
+[ext_resource type="FontFile" uid="uid://tu4oagvaro4u" path="res://assets/fonts/NOTOSANSTHAILOOPED-BOLD.TTF" id="3_prge2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hvdct"]
+bg_color = Color(0.180005, 0.180005, 0.180005, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lhlpx"]
+content_margin_left = 40.0
+content_margin_top = 20.0
+content_margin_bottom = 10.0
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xm1gu"]
+bg_color = Color(0.923311, 0.594717, 0.132205, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="Choice" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yj5cn")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_hvdct")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 188.0
+offset_bottom = 263.0
+grow_horizontal = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("3_prge2")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_lhlpx")
+text = "เลือกเมือง"
+horizontal_alignment = 1
+
+[node name="Title2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 145.0
+offset_bottom = 227.0
+grow_horizontal = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("3_prge2")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_lhlpx")
+text = "วันที่ 2"
+horizontal_alignment = 1
+
+[node name="ButtonSubmit" type="Button" parent="."]
+layout_mode = 2
+offset_left = 62.0
+offset_top = 310.0
+offset_right = 370.595
+offset_bottom = 354.0
+theme_override_fonts/font = ExtResource("3_prge2")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_xm1gu")
+text = "เมือง Past"
+
+[node name="ButtonSubmit2" type="Button" parent="."]
+layout_mode = 2
+offset_left = 62.0
+offset_top = 368.0
+offset_right = 370.595
+offset_bottom = 412.0
+theme_override_fonts/font = ExtResource("3_prge2")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_xm1gu")
+text = "เมือง Present"
+
+[node name="ButtonSubmit3" type="Button" parent="."]
+layout_mode = 2
+offset_left = 62.0
+offset_top = 425.0
+offset_right = 370.595
+offset_bottom = 469.0
+theme_override_fonts/font = ExtResource("3_prge2")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_xm1gu")
+text = "เมือง Future"
+
+[connection signal="button_down" from="ButtonSubmit" to="." method="_on_button_submit_button_down"]
