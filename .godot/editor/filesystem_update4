@@ -1,18 +1,13 @@
-<<<<<<< Updated upstream
-res://Testnpcrandom/Npcspawn/npcspawn.tscn
 res://ui/appealing_panel.tscn
-res://Testnpcrandom/Npc/npc2.tscn
-res://Testnpcrandom/Npc/npc.tscn
-res://Testnpcrandom/Npcspawn/npcspwn.tscn
-res://Testnpcrandom/Npcspawn/npcspwn1.gd
-res://scenes/DayShift.tscn
-res://scenes/DialogueController.gd
-=======
 res://ui/appealing_panel.gd
-res://ui/appealing_panel.tscn
-res://scenes/DialogueController.gd
-res://ui/Word1.gd
-res://Testnpcrandom/Npc.tscn
-res://Testnpcrandom/Npcspawn/npcspawn.tscn
 res://scenes/DayShift.tscn
->>>>>>> Stashed changes
+res://scenes/MainMenu.tscn
+res://scenes/DialogueController.gd
+res://scenes/MainMenu.gd
+res://script/progression.gd
+res://Testnpcrandom/Npc/npc2.tscn
+res://sprite/npc-character.tscn
+res://ui/investigation.tscn
+res://ui/CharacterDialogue.gd
+res://scenes/SaveLoad.tscn
+res://script/MainMenu.gd

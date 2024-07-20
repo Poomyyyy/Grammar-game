@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck83ysqicoxo"
-path="res://.godot/imported/midground.png-5d0ba47ee485e8dc2140771189d6ef4e.ctex"
+uid="uid://cmbqpp8ajkt5m"
+path="res://.godot/imported/arrow-back.svg-725f0d41ea7826cd9481290aea9c0c10.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mock-up/scene/midground.png"
-dest_files=["res://.godot/imported/midground.png-5d0ba47ee485e8dc2140771189d6ef4e.ctex"]
+source_file="res://assets/icons/arrow-back.svg"
+dest_files=["res://.godot/imported/arrow-back.svg-725f0d41ea7826cd9481290aea9c0c10.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

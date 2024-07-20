@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjo8lfkdkwiki"
-path="res://.godot/imported/foreground_present.png-433f25b5161491e632fa20fa7934c92c.ctex"
+uid="uid://c2auatg1na1gj"
+path="res://.godot/imported/foreground.png-fafb8490aa4867e83a82cf906206baec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mock-up/scene/foreground_present.png"
-dest_files=["res://.godot/imported/foreground_present.png-433f25b5161491e632fa20fa7934c92c.ctex"]
+source_file="res://assets/scene-bg/past/foreground.png"
+dest_files=["res://.godot/imported/foreground.png-fafb8490aa4867e83a82cf906206baec.ctex"]
 
 [params]
 

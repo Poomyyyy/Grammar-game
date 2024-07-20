@@ -1,4 +1,21 @@
-[gd_scene format=3 uid="uid://dcx0oeyb87yrn"]
+[gd_scene load_steps=10 format=3 uid="uid://dcx0oeyb87yrn"]
+
+[ext_resource type="Script" path="res://script/MainMenu.gd" id="1_udyvs"]
+[ext_resource type="Texture2D" uid="uid://r8twxdilo1vq" path="res://assets/scene-bg/past/background.png" id="2_ung1w"]
+[ext_resource type="Texture2D" uid="uid://bsqbmt7l82tfl" path="res://assets/scene-bg/past/midground.png" id="3_3sw51"]
+[ext_resource type="Texture2D" uid="uid://c2auatg1na1gj" path="res://assets/scene-bg/past/foreground.png" id="4_wjw1t"]
+[ext_resource type="FontFile" uid="uid://tu4oagvaro4u" path="res://assets/fonts/NOTOSANSTHAILOOPED-BOLD.TTF" id="5_qfaxk"]
+[ext_resource type="Texture2D" uid="uid://d2uxctn787y6c" path="res://assets/icons/GrammasterLOGO.png" id="6_4jt4v"]
+[ext_resource type="PackedScene" uid="uid://rxnxnh6h22w1" path="res://scenes/SaveLoad.tscn" id="7_0ns0a"]
+
+[sub_resource type="Gradient" id="Gradient_hnayl"]
+colors = PackedColorArray(0.336608, 0.336608, 0.336608, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_j1fk0"]
+gradient = SubResource("Gradient_hnayl")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.790598, 0.188034)
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -8,3 +25,109 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 0
+script = ExtResource("1_udyvs")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(237, 0)
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(878, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Sky"]
+position = Vector2(203, 447.18)
+scale = Vector2(0.900769, 0.894359)
+texture = ExtResource("2_ung1w")
+
+[node name="MidGround" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(237, 0)
+motion_scale = Vector2(0.7, 0.7)
+motion_mirroring = Vector2(878, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/MidGround"]
+position = Vector2(203, 447.18)
+scale = Vector2(0.900769, 0.894359)
+texture = ExtResource("3_3sw51")
+
+[node name="ForeGround" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(237, 0)
+motion_mirroring = Vector2(878, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ForeGround"]
+position = Vector2(203, 447.18)
+scale = Vector2(0.900769, 0.894359)
+texture = ExtResource("4_wjw1t")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(-6, 6.00001)
+scale = Vector2(17.7484, 17.7484)
+energy = 1.58
+range_layer_min = -100
+texture = SubResource("GradientTexture2D_j1fk0")
+texture_scale = 0.78
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="StartButton" type="Button" parent="CanvasLayer"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -350.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("5_qfaxk")
+theme_override_font_sizes/font_size = 30
+
+[node name="Label" type="Label" parent="CanvasLayer/StartButton"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -102.5
+offset_top = 34.0
+offset_right = 102.5
+offset_bottom = 83.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_qfaxk")
+theme_override_font_sizes/font_size = 30
+text = "แตะเพื่อเริ่มเล่น"
+
+[node name="SubLabel" type="Label" parent="CanvasLayer/StartButton/Label"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -47.5
+offset_top = -9.0
+offset_right = 48.5
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Tap to begin"
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -206.0
+offset_right = 206.0
+offset_bottom = 412.0
+grow_horizontal = 2
+texture = ExtResource("6_4jt4v")
+expand_mode = 1
+
+[node name="SaveLoad" parent="CanvasLayer" instance=ExtResource("7_0ns0a")]
+anchors_preset = 12
+anchor_top = 1.0
+offset_top = 26.0
+offset_bottom = 129.0
+grow_vertical = 0
+pivot_offset = Vector2(0, 242.524)
+size_flags_horizontal = 3
+size_flags_vertical = 8
+
+[connection signal="button_down" from="CanvasLayer/StartButton" to="." method="_on_start_button_button_down"]

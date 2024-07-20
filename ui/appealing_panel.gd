@@ -12,20 +12,15 @@ func _ready():
 func _selection(word, node):
 	if CurrentButton != null:
 		CurrentButton.text = CurrentAppealWord
-		CurrentButton.get_theme_stylebox("panel").border_width_left = 0
-		CurrentButton.get_theme_stylebox("panel").border_width_right = 0
-		CurrentButton.get_theme_stylebox("panel").border_width_top = 0
-		CurrentButton.get_theme_stylebox("panel").border_width_bottom = 0
+		var style = CurrentButton.get_theme_stylebox("normal").duplicate()
+		style.set("bg_color", Color("#f0b000"))
+		CurrentButton.add_theme_stylebox_override("normal", style)
 	CurrentAppealWord = word
 	CurrentButton = node
-	print(node)
 	
-	var style = CurrentButton.get_theme_stylebox("panel")
-	style.bg_color = Color("#ffd890")
-	CurrentButton.get_theme_stylebox("panel").bg_color = Color("#ffd890")
-	CurrentButton.get_theme_stylebox("panel").border_width_right = 5
-	CurrentButton.get_theme_stylebox("panel").border_width_top = 5
-	CurrentButton.get_theme_stylebox("panel").border_width_bottom = 5
+	var style = CurrentButton.get_theme_stylebox("normal").duplicate()
+	style.set("bg_color", Color("#a3bbf8"))
+	CurrentButton.add_theme_stylebox_override("normal", style)
 	
 	TextCorrection.text = word
 
@@ -51,5 +46,6 @@ func _on_line_edit_text_changed(new_text):
 		if new_text == null:
 			CurrentButton.text = CurrentAppealWord
 		else:
+			#print(new_text)
 			CurrentButton.text = new_text
 	pass

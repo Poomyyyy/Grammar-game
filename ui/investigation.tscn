@@ -1,13 +1,27 @@
-[gd_scene load_steps=7 format=3 uid="uid://b8mnx6cgqss1j"]
+[gd_scene load_steps=17 format=3 uid="uid://b8mnx6cgqss1j"]
 
+[ext_resource type="Texture2D" uid="uid://7tp7e286bnch" path="res://assets/character/body.png" id="1_wcni0"]
+[ext_resource type="Script" path="res://ui/CharacterDialogue.gd" id="1_wp0n6"]
 [ext_resource type="FontFile" uid="uid://ck20l4v37biai" path="res://assets/fonts/NOTOSANSTHAILOOPED-BLACK.TTF" id="1_yvnpv"]
+[ext_resource type="Texture2D" uid="uid://bxyahceipgodi" path="res://assets/character/paw-ear.png" id="2_uidrb"]
+[ext_resource type="Texture2D" uid="uid://ccoj2i8tv0mx3" path="res://assets/character/skin5.png" id="3_1s2h1"]
+[ext_resource type="Texture2D" uid="uid://qorkexq4pvo2" path="res://assets/character/skin1.png" id="3_7u5p2"]
 [ext_resource type="FontFile" uid="uid://tu4oagvaro4u" path="res://assets/fonts/NOTOSANSTHAILOOPED-BOLD.TTF" id="3_bdqds"]
+[ext_resource type="Texture2D" uid="uid://duu1tn27a61b6" path="res://assets/character/eye.png" id="4_08wmv"]
+[ext_resource type="Texture2D" uid="uid://btxcaqpm5ld5q" path="res://assets/character/outline.png" id="5_lrpvs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5dbk3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j6t04"]
+draw_center = false
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nckja"]
 bg_color = Color(0.941176, 0.690196, 0.203922, 1)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 expand_margin_bottom = 20.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hp4xe"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6oauj"]
 content_margin_left = 10.0
@@ -38,15 +52,210 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -340.0
+offset_top = -252.0
 grow_horizontal = 2
 grow_vertical = 0
-size_flags_horizontal = 3
+size_flags_horizontal = 4
+size_flags_vertical = 8
+script = ExtResource("1_wp0n6")
+
+[node name="Character" type="Panel" parent="."]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_styles/panel = SubResource("StyleBoxEmpty_5dbk3")
+
+[node name="PersonL" type="Panel" parent="Character"]
+z_index = -1
+layout_mode = 0
+offset_left = -93.99
+offset_top = -575.0
+offset_right = 334.01
+offset_bottom = -128.0
+pivot_offset = Vector2(210.99, 231)
+theme_override_styles/panel = SubResource("StyleBoxFlat_j6t04")
+
+[node name="PersonL" type="TextureRect" parent="Character/PersonL"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(215, 247.159)
+texture = ExtResource("1_wcni0")
+expand_mode = 1
+
+[node name="Skin" type="TextureRect" parent="Character/PersonL"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_7u5p2")
+expand_mode = 1
+
+[node name="Eye" type="TextureRect" parent="Character/PersonL"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_08wmv")
+expand_mode = 1
+
+[node name="Paw" type="TextureRect" parent="Character/PersonL"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_uidrb")
+expand_mode = 1
+
+[node name="PersonR" type="Panel" parent="Character"]
+z_index = -2
+layout_mode = 0
+offset_left = 80.145
+offset_top = -575.0
+offset_right = 508.145
+offset_bottom = -128.0
+pivot_offset = Vector2(215.855, 253)
+theme_override_styles/panel = SubResource("StyleBoxFlat_j6t04")
+
+[node name="PersonL" type="TextureRect" parent="Character/PersonR"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(215, 247.159)
+texture = ExtResource("1_wcni0")
+expand_mode = 1
+
+[node name="Skin" type="TextureRect" parent="Character/PersonR"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_7u5p2")
+expand_mode = 1
+
+[node name="Eye" type="TextureRect" parent="Character/PersonR"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_08wmv")
+expand_mode = 1
+
+[node name="Paw" type="TextureRect" parent="Character/PersonR"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_uidrb")
+expand_mode = 1
 
 [node name="DialogueMegaFrame" type="PanelContainer" parent="."]
 layout_mode = 2
 size_flags_vertical = 8
 theme_override_styles/panel = SubResource("StyleBoxFlat_nckja")
+
+[node name="PersonL" type="CharacterBody2D" parent="DialogueMegaFrame"]
+visible = false
+z_index = -1
+position = Vector2(20, -100)
+scale = Vector2(1.355, 1.355)
+motion_mode = 1
+
+[node name="Body" type="Sprite2D" parent="DialogueMegaFrame/PersonL"]
+modulate = Color(0.352042, 0.773801, 3.85046e-07, 1)
+position = Vector2(71.0631, 24.672)
+scale = Vector2(0.306, 0.306)
+texture = ExtResource("1_wcni0")
+
+[node name="Paw" type="Sprite2D" parent="DialogueMegaFrame/PersonL"]
+modulate = Color(0.998075, 0.990423, 0.977305, 1)
+position = Vector2(71.0631, 24.672)
+scale = Vector2(0.306, 0.306)
+texture = ExtResource("2_uidrb")
+
+[node name="Skin" type="Sprite2D" parent="DialogueMegaFrame/PersonL"]
+modulate = Color(0.715389, 0.126111, 0.709028, 1)
+position = Vector2(71.0631, 24.672)
+scale = Vector2(0.306, 0.306)
+texture = ExtResource("3_1s2h1")
+
+[node name="Eye" type="Sprite2D" parent="DialogueMegaFrame/PersonL"]
+modulate = Color(0.83795, 0, 0.159982, 1)
+position = Vector2(71.0631, 24.672)
+scale = Vector2(0.306, 0.306)
+texture = ExtResource("4_08wmv")
+
+[node name="Outline" type="Sprite2D" parent="DialogueMegaFrame/PersonL"]
+modulate = Color(0.981073, 0.924227, 0.916946, 1)
+position = Vector2(71.0631, 24.672)
+scale = Vector2(0.306, 0.306)
+texture = ExtResource("5_lrpvs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DialogueMegaFrame/PersonL"]
+visible = false
+texture_filter = 1
+shape = SubResource("CapsuleShape2D_hp4xe")
+debug_color = Color(1.54018e-06, 0.842348, 0.979347, 0.42)
+
+[node name="PersonR" type="CharacterBody2D" parent="DialogueMegaFrame"]
+visible = false
+z_index = -2
+position = Vector2(193, -100)
+scale = Vector2(1.355, 1.355)
+motion_mode = 1
+
+[node name="Body" type="Sprite2D" parent="DialogueMegaFrame/PersonR"]
+modulate = Color(0.981073, 0.924227, 0.916946, 1)
+position = Vector2(75.4912, 24.672)
+scale = Vector2(0.306, 0.306)
+texture = ExtResource("1_wcni0")
+
+[node name="Paw" type="Sprite2D" parent="DialogueMegaFrame/PersonR"]
+modulate = Color(0.998075, 0.990423, 0.977305, 1)
+position = Vector2(75.4912, 24.672)
+scale = Vector2(0.306, 0.306)
+texture = ExtResource("2_uidrb")
+
+[node name="Skin" type="Sprite2D" parent="DialogueMegaFrame/PersonR"]
+modulate = Color(0.0649755, 0.365082, 0.502308, 1)
+position = Vector2(75.4912, 24.672)
+scale = Vector2(0.306, 0.306)
+texture = ExtResource("3_1s2h1")
+
+[node name="Eye" type="Sprite2D" parent="DialogueMegaFrame/PersonR"]
+modulate = Color(0.449148, 0.888269, 0.746009, 1)
+position = Vector2(75.4912, 24.672)
+scale = Vector2(0.306, 0.306)
+texture = ExtResource("4_08wmv")
+
+[node name="Outline" type="Sprite2D" parent="DialogueMegaFrame/PersonR"]
+modulate = Color(0.981073, 0.924227, 0.916946, 1)
+position = Vector2(75.4912, 24.672)
+scale = Vector2(0.306, 0.306)
+texture = ExtResource("5_lrpvs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DialogueMegaFrame/PersonR"]
+visible = false
+texture_filter = 1
+shape = SubResource("CapsuleShape2D_hp4xe")
+debug_color = Color(1.54018e-06, 0.842348, 0.979347, 0.42)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="DialogueMegaFrame"]
 layout_mode = 2

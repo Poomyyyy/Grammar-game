@@ -1,12 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://p231ma1464qf"]
+[gd_scene load_steps=14 format=3 uid="uid://p231ma1464qf"]
 
 [ext_resource type="Texture2D" uid="uid://lc6jus06m0cu" path="res://assets/mock-up/sky1.png" id="1_sk6nk"]
-[ext_resource type="Script" path="res://scenes/InteractableNpc.gd" id="2_kdxtk"]
+[ext_resource type="Script" path="res://script/InteractableNpc.gd" id="2_kdxtk"]
 [ext_resource type="Texture2D" uid="uid://b7fv2uacj0djd" path="res://assets/mock-up/street1.png" id="2_vsfli"]
 [ext_resource type="Texture2D" uid="uid://7tp7e286bnch" path="res://assets/character/body.png" id="2_w3he4"]
-[ext_resource type="Script" path="res://scenes/PlayerCamera.gd" id="4_or7gr"]
-[ext_resource type="Script" path="res://scenes/DialogueController.gd" id="6_wbb4c"]
-[ext_resource type="PackedScene" uid="uid://bsjg8tmo5m7lg" path="res://sprite/npc-character.tscn" id="7_dl3ce"]
+[ext_resource type="Script" path="res://script/PlayerCamera.gd" id="4_or7gr"]
+[ext_resource type="Script" path="res://script/DialogueController.gd" id="6_wbb4c"]
 [ext_resource type="PackedScene" uid="uid://b8mnx6cgqss1j" path="res://ui/investigation.tscn" id="7_mqdxw"]
 [ext_resource type="PackedScene" uid="uid://y7ke2edfixad" path="res://ui/appealing_panel.tscn" id="8_26xd4"]
 
@@ -55,12 +54,7 @@ disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="InteractableNpc"]
 position = Vector2(-907.72, -76.72)
-<<<<<<< Updated upstream
-scale = Vector2(0.370547, 0.370547)
-=======
 scale = Vector2(0.333437, 0.333437)
->>>>>>> Stashed changes
-texture = ExtResource("2_w3he4")
 
 [node name="InteractButton" type="Button" parent="InteractableNpc"]
 offset_left = -1020.0
@@ -113,14 +107,9 @@ process_callback = 0
 wait_time = 10.0
 one_shot = true
 
-[node name="Character" parent="DialogueController" instance=ExtResource("7_dl3ce")]
-visible = false
-position = Vector2(110, 440)
-scale = Vector2(6, 6)
-
 [node name="InvestigationPanel" parent="DialogueController" instance=ExtResource("7_mqdxw")]
 offset_top = -375.0
-offset_bottom = -66.0
+offset_bottom = -88.0
 auto_translate = false
 
 [node name="AppealToggle" type="Button" parent="DialogueController"]
@@ -154,7 +143,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 8
 theme_override_styles/panel = SubResource("StyleBoxFlat_kdoax")
 
-[node name="test1" type="Button" parent="DialogueController/ButtomMargin"]
+[node name="guide" type="Button" parent="DialogueController/ButtomMargin"]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -163,20 +152,21 @@ offset_top = -18.5
 offset_right = 97.0
 offset_bottom = 18.5
 grow_vertical = 2
-text = "test 1"
+text = "guide"
 
-[node name="test2" type="Button" parent="DialogueController/ButtomMargin"]
+[node name="guide2" type="Button" parent="DialogueController/ButtomMargin"]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
+offset_left = 117.0
 offset_top = -18.5
-offset_right = 97.0
+offset_right = 214.0
 offset_bottom = 18.5
 grow_vertical = 2
-text = "test 1"
+text = "menu"
 
 [connection signal="button_down" from="InteractableNpc/InteractButton" to="InteractableNpc" method="_on_interact_button_button_down"]
 [connection signal="button_down" from="DialogueController/AppealToggle" to="DialogueController" method="_on_toggle_area_button_down"]
-[connection signal="button_down" from="DialogueController/ButtomMargin/test1" to="DialogueController" method="_on_test_1_button_down"]
-[connection signal="button_down" from="DialogueController/ButtomMargin/test2" to="DialogueController" method="_on_test_1_button_down"]
+[connection signal="button_down" from="DialogueController/ButtomMargin/guide" to="DialogueController" method="_on_test_1_button_down"]
+[connection signal="button_down" from="DialogueController/ButtomMargin/guide2" to="DialogueController" method="_on_test_1_button_down"]

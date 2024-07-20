@@ -24,7 +24,7 @@ scale = Vector2(0.306, 0.306)
 texture = ExtResource("2_tg18r")
 
 [node name="Skin" type="Sprite2D" parent="."]
-modulate = Color(0.38301, 0.327384, 0.250741, 1)
+modulate = Color(0.0649755, 0.365082, 0.502308, 1)
 position = Vector2(-16.328, 24.672)
 scale = Vector2(0.306, 0.306)
 texture = ExtResource("3_h0xvl")
